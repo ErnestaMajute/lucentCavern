@@ -1,0 +1,11 @@
+body {
+    background: url('/media/index-picture.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #ffffff;
+    font-family: 'Lato';
+}
+
+html {
+    height: 100%;
+}
