@@ -12,11 +12,11 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Products
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
                         <li><a class="dropdown-item" href="#">All Products</a></li>
                         <li><a class="dropdown-item" href="#">Raw Crystals</a></li>
                         <li><a class="dropdown-item" href="#">Neclaces & Bracelets</a></li>
@@ -33,7 +33,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <form class="d-flex">
+                    <form class="d-flex" method="GET" action="">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
@@ -42,25 +42,24 @@
         </div>
 
         <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+            <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Profile
+                My Account
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <a class="dropdown-item" href="#">All Products</a>
-                <a class="dropdown-item" href="#">Raw Crystals</a>
-                <a class="dropdown-item" href="#">Neclaces & Bracelets</a>
-                <a class="dropdown-item" href="#">Salt Lamps</a>
-                <a class="dropdown-item" href="#">Essential Oils</a>
-                <a class="dropdown-item" href="#">Dream cathers</a>
-                <a class="dropdown-item" href="#">Crystal Eggs & Spheres</a>
+            <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                <a class="dropdown-item" href="#">Product Managment</a>
+                <a class="dropdown-item" href="#">My Profile</a>
+                <a class="dropdown-item" href="#">My Favourites</a>
+                <a class="dropdown-item" href="#">Logout</a>
+                <a class="dropdown-item" href="#">Register</a>
+                <a class="dropdown-item" href="#">Login</a>
             </div>
         </div>
         <div class="nav-item">
             <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link"
                 href="#">
                 <div class="text-center">
-                    <div><i class="fas fa-shopping-bag"></i></div>
+                    <div><i class="fas fa-shopping-cart"></i></div>
                     <p class="my-0">
                         {% if grand_total %}
                         ${{ grand_total|floatformat:2 }}
