@@ -17,3 +17,24 @@ html {
 .navbar-toggler {
     background-color: #f1d8e2;
 }
+
+.about-container {
+    background-color: #212529;
+}
+
+.products-container {
+    background-color: #f5d7e0;
+    
+}   
+
+.mini-card {
+    opacity: 0.4;
+    border: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
