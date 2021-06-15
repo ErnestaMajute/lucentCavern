@@ -1,11 +1,19 @@
 body {
-    background: url('/media/index-picture.jpg') no-repeat center center fixed;
+    background: url('/media/crystals-index.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #ffffff;
-    font-family: 'Lato';
+    font-family: 'Alegreya', serif;
 }
 
 html {
     height: 100%;
+}
+
+.navbar-colors {
+    background-color: black;
+}
+
+.navbar-toggler {
+    background-color: #f1d8e2;
 }
