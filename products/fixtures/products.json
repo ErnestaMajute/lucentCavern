@@ -1,0 +1,660 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340155",
+        "name": "Rose Quartz Large",
+        "description": "Weight - 650g. Rose Quartz Cluster",
+        "price": 12.5,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2016/01/14/22/04/rose-quartz-1140859_960_720.jpg",
+        "image": "rosequartz-product.jpg"
+    }
+}, {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001600425",
+        "name": "Amethyst",
+        "description": "Weight - 184g.",
+        "price": 21.95,
+        "category": 1,
+        "image_url": "https://images.unsplash.com/photo-1548357194-9e1aace4e94d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=80",
+        "image": "amethyst-product.jpg"
+    }
+}, {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Multicolor Apophyllite",
+        "description": "Weight - 391g. Multicolor Apophyllite ",
+        "price": 51.95,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2014/02/07/20/10/apophyllit-261316_960_720.jpg",
+        "image": "apophyllite-product.jpg"
+    }
+}, {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "Black Tourmaline",
+        "description": "Weight - 320g. Black Tourmaline.",
+        "price": 80.5,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2016/08/21/11/51/black-tourmaline-1609432_960_720.jpg",
+        "image": "blacktourmaline-product.jpg"
+    }
+}, {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002111605",
+        "name": "Blood Stone",
+        "description": "Weight - 150g. Bloodstone Tumblestone ",
+        "price": 16.99,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2016/03/06/02/24/stone-1239615_960_720.jpg",
+        "image": "bloodstone-product.jpg"
+    }
+}, {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002260206",
+        "name": "Clear Quartz",
+        "description": "Weight - 375g. Clear Quartz Crystal",
+        "price": 30,
+        "category": 1,
+        "image_url": "https://images.unsplash.com/photo-1553775116-4cb1f4f57ed7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
+        "image": "clearquartz-product.jpg"
+    }
+}, {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002440521",
+        "name": "Chalcopyrite",
+        "description": "Weight - 100g. Chalcopyrite",
+        "price": 59,
+        "category": 1,
+        "image_url": "https://images.unsplash.com/photo-1550008048-79f06a04a08b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "image": "colorpyrate-product.jpg"
+    }
+}, {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002601115",
+        "name": "Crystals Set",
+        "description": "7 Crystals set. Quartz",
+        "price": 50,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2016/08/03/22/00/crystals-1567953_640.jpg",
+        "image": "crystals-product.jpg"
+    }
+}, {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002690715",
+        "name": "Kyanite stone",
+        "description": "Weight - 247g. Kyanite Rough Large",
+        "price": 18.95,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2017/05/15/23/55/kyanite-2316477_960_720.jpg",
+        "image": "kyanitestone-product.jpg"
+    }
+}, {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002701115",
+        "name": "Moonstone",
+        "description": "Weight - 100g. Moonstone",
+        "price": 5.99,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2015/05/07/20/49/regnbagsmansten-757157__340.jpg",
+        "image": "moonstone-product.jpg"
+    }
+}, {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002761055",
+        "name": "Black Obsidian",
+        "description": "Weight - 40g. Black Obsidian Rough",
+        "price": 3.5,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2014/10/27/18/32/obsidian-505332_640.jpg",
+        "image": "obsidian-product.jpg"
+    }
+}, {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002820069",
+        "name": "Pyrite Cluster",
+        "description": "Weight - 220g. Pyrite Cluster",
+        "price": 30,
+        "category": 1,
+        "image_url": "https://images.unsplash.com/photo-1586658066616-682a5e489a12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&w=1000&q=80",
+        "image": "pyrate-product.jpg"
+    }
+}, {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002820147",
+        "name": "Turquoise Stone",
+        "description": "Weight - 30g. Turquoise Stone.",
+        "price": 30.5,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2018/05/10/17/41/turquoise-3388145_960_720.jpg",
+        "image": "turquoise-product.jpg"
+    }
+}, {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002910572",
+        "name": "Moonstone & Turquoise Bracelet",
+        "description": "Moonstone & Turquoise Bracelet",
+        "price": 9.99,
+        "category": 2,
+        "image_url": "https://cdn.pixabay.com/photo/2017/06/28/10/23/amanu-2450186_960_720.jpg",
+        "image": "bracelet-product.jpg"
+    }
+}, {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002990740",
+        "name": "Quartz, Moonstone & Turquoise Bracelet",
+        "description": "Quartz, Moonstone & Turquoise Bracelet",
+        "price": 9.99,
+        "category": 1,
+        "image_url": "https://cdn.pixabay.com/photo/2015/03/09/14/14/gemstone-bracelet-665753_640.jpg",
+        "image": "gemstone-bracelet-product.jpg"
+    }
+}, {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003050248",
+        "name": "Kyanite Point Pendant",
+        "description": "Kyanite Point Pendant with Silver",
+        "price": 30.99,
+        "category": 2,
+        "image_url": "https://cdn.pixabay.com/photo/2015/03/09/11/33/kyanite-665511_960_720.jpg",
+        "image": "kyanite-product.jpg"
+    }
+}, {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003070787",
+        "name": "Moonstone Pendand Silver",
+        "description": "Moonstone Pendant with Silver base",
+        "price": 50.5,
+        "category": 2,
+        "image_url": "https://cdn.pixabay.com/photo/2014/01/17/21/48/moonstone-247202_960_720.jpg",
+        "image": "moonstonependant-product.jpg"
+    }
+}, {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003090182",
+        "name": "Rose Quartz Ring",
+        "description": "Rose Quartz Ring. Universal size",
+        "price": 20,
+        "category": 2,
+        "image_url": "https://c.pxhere.com/photos/c9/4d/jewelry_rose_quartz_pink_cuff_stone_bracelet_gem_gemstone-901942.jpg!s",
+        "image": "rosequartzz-product.jpg"
+    }
+}, {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003090186",
+        "name": "Ruby ring with Silver",
+        "description": "Ruby ring with Silver base. Universal size",
+        "price": 20,
+        "category": 2,
+        "image_url": "https://cdn.pixabay.com/photo/2015/03/09/09/30/ruby-665250__340.jpg",
+        "image": "ruby-product.jpg"
+    }
+}, {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003161326",
+        "name": "Obsidian Stone Bracelet",
+        "description": "Obsidian Stone Bracelet. 24 cm.",
+        "price": 30,
+        "category": 2,
+        "image_url": "https://cdn.pixabay.com/photo/2015/03/09/13/59/snowflake-obsidian-665711_640.jpg",
+        "image": "snowflake-obsidian-product.jpg"
+    }
+}, {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003230723",
+        "name": "Tiger's Eye Beads",
+        "description": "Tiger's Eye Beads",
+        "price": 40,
+        "category": 2,
+        "image_url": "https://cdn.pixabay.com/photo/2016/10/02/06/16/tigers-eye-beads-1708989_960_720.jpg",
+        "image": "tigers-eye-beads-product.jpg"
+    }
+}, {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003270936",
+        "name": "Tiger's Eye Bracelet",
+        "description": "Tiger's Eye Bracelet. 24 cm",
+        "price": 30,
+        "category": 2,
+        "image_url": "https://cdn.pixabay.com/photo/2015/03/09/14/00/tigers-eye-665712_640.jpg",
+        "image": "tigers-eye-jasper-product.jpg"
+    }
+}, {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003360384",
+        "name": "Tiger's Eye Bracelet with Copper",
+        "description": "Tiger's Eye Bracelet with Copper details",
+        "price": 29.99,
+        "category": 2,
+        "image_url": "https://cdn.pixabay.com/photo/2015/03/09/10/01/tigers-eye-665320_640.jpg",
+        "image": "tigers-eye-product.jpg"
+    }
+}, {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003440111",
+        "name": "Himalayan Rock Salt Lamp Small",
+        "description": "Himalayan Rock Salt Lamp Small. 30cm",
+        "price": 82,
+        "category": 3,
+        "image_url": "https://cdn.pixabay.com/photo/2016/07/29/20/17/light-1555649__480.jpg",
+        "image": "light-salt-closed-product.jpg"
+    }
+}, {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003540313",
+        "name": "Himalayan Rock Salt Lamp Point",
+        "description": "Himalayan Rock Salt Lamp Point 50cm",
+        "price": 106.99,
+        "category": 3,
+        "image_url": "https://cdn.pixabay.com/photo/2016/10/20/18/55/salt-1756349_960_720.jpg",
+        "image": "saltlamp-product.jpg"
+    }
+}, {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003560513",
+        "name": "Himalayan Rock Salt Lamp Open",
+        "description": "Himalayan Rock Salt Lamp Open 25cm",
+        "price": 70.99,
+        "category": 3,
+        "image_url": "https://cdn.pixabay.com/photo/2014/12/20/00/30/salt-lamp-573625_960_720.jpg",
+        "image": "salt-lamp-product.jpg"
+    }
+}, {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003560948",
+        "name": "Himalayan Rock Salt Lamp Open",
+        "description": "Himalayan Rock Salt Lamp Open 40cm",
+        "price": 100,
+        "category": 3,
+        "image_url": "https://cdn.pixabay.com/photo/2015/11/17/17/41/salt-lamps-1047941_960_720.jpg",
+        "image": "salt-lamps-product.jpg"
+    }
+}, {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003570628",
+        "name": "Basil Oil",
+        "description": "Basil Oil (Ocimum Basilicum) 10ml",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "https://images.unsplash.com/photo-1600598307622-9165bfa2ae42?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFzaWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+        "image": "basil-product.jpg"
+    }
+}, {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003620308",
+        "name": "Black Pepper Oil",
+        "description": "Black Pepper Oil (Piper Negrum) 10ml",
+        "price": 5.99,
+        "category": 4,
+        "image_url": "https://images.unsplash.com/photo-1612708034948-466dcc56ebde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&w=1000&q=80",
+        "image": "blackpepper-product.jpg"
+    }
+}, {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003690115",
+        "name": "Clove Oil",
+        "description": "Clove Oil (Eugenia Caryophyllata) 10ml",
+        "price": 5.99,
+        "category": 4,
+        "image_url": "https://images.unsplash.com/photo-1622975252259-ead191a941b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fHRyZWUlMjBidWR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+        "image": "clove-product.jpg"
+    }
+}, {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003690116",
+        "name": "Cypress Oil",
+        "description": "Cypress Oil (Cupressus Sempervirens) 10ml",
+        "price": 8,
+        "category": 4,
+        "image_url": "https://cdn.pixabay.com/photo/2019/03/16/19/38/cypress-4059560_640.jpg",
+        "image": "cypress-product.jpg"
+    }
+}, {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003780391",
+        "name": "Eucalyptus Oil",
+        "description": "Eucalyptus Oil (Eucalyptus Globulus) 10ml",
+        "price": 5.99,
+        "category": 4,
+        "image_url": "https://cdn.pixabay.com/photo/2017/02/21/17/40/eucalyptus-2086785_1280.jpg",
+        "image": "eucalyptus-product.jpg"
+    }
+}, {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003790542",
+        "name": "Geranium Oil",
+        "description": "Geranium Oil (Pelargonium Graveolens) 10ml",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "https://cdn.pixabay.com/photo/2020/06/09/10/22/flowers-5277837_1280.jpg",
+        "image": "geranium-product.jpg"
+    }
+}, {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003831225",
+        "name": "Grapefruit Oil",
+        "description": "Grapefruit Oil (Citrus Paradisi) 10ml",
+        "price": 4.99,
+        "category": 4,
+        "image_url": "https://images.unsplash.com/photo-1607781143315-c87bebec1452?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "image": "grapefruit-product.jpg"
+    }
+}, {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003861402",
+        "name": "Jasmine Oil",
+        "description": "Jasmine Oil (Jasminum Officinale) 10ml",
+        "price": 8.99,
+        "category": 4,
+        "image_url": "https://cdn.pixabay.com/photo/2020/06/06/15/48/scent-of-jasmine-5267074__340.jpg",
+        "image": "jasmine-product.jpg"
+    }
+}, {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003910638",
+        "name": "Juniper Berry Oil",
+        "description": "Juniper Berry Oil (Juniperus Communis) 10ml",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "https://images.unsplash.com/photo-1601873252046-eb28f6a389d4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGp1bmlwZXIlMjBiZXJyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        "image": "juniper-product.jpg"
+    }
+}, {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003950574",
+        "name": "Lavender Oil",
+        "description": "Lavender Oil (Lavandula Augustifolia) 10ml",
+        "price": 4.99,
+        "category": 4,
+        "image_url": "https://cdn.pixabay.com/photo/2018/06/06/20/41/lavender-3458764__340.jpg",
+        "image": "lavender-product.jpg"
+    }
+}, {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003950576",
+        "name": "Lemongrass Oil",
+        "description": "Lemongrass Oil (Cymbopogon Citratus) 10ml",
+        "price": 4.99,
+        "category": 4,
+        "image_url": "https://cdn.pixabay.com/photo/2014/02/23/05/54/cymbopogon-272641_960_720.jpg",
+        "image": "lemongrass-product.jpg"
+    }
+}, {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003960062",
+        "name": "Lime Oil",
+        "description": "Lime Oil (Citrus Aurantifolia) 10ml",
+        "price": 4.99,
+        "category": 4,
+        "image_url": "https://images.pexels.com/photos/1171521/pexels-photo-1171521.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "image": "lime-product.jpg"
+    }
+}, {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003960682",
+        "name": "Orange Oil",
+        "description": "Orange Oil (Citrus Sinensis) 10ml",
+        "price": 4.99,
+        "category": 4,
+        "image_url": "https://images.unsplash.com/photo-1544755100-59e5ad09f16e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&w=1000&q=80",
+        "image": "orange-product.jpg"
+    }
+}, {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003960775",
+        "name": "Peppermint Oil",
+        "description": "Peppermint Oil (Mentha Piperita) 10ml",
+        "price": 4.99,
+        "category": 4,
+        "image_url": "https://cdn.pixabay.com/photo/2019/09/18/18/18/peppermint-4487398__340.jpg",
+        "image": "peppermint-product.jpg"
+    }
+}, {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003990736",
+        "name": "Rosemary Oil",
+        "description": "Rosemary Oil  (Rosmarinus Officinalis) 10ml",
+        "price": 4.99,
+        "category": 4,
+        "image_url": "https://images.unsplash.com/photo-1582745741856-1a5d68158ba3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhlcmJhbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        "image": "rosemary-product"
+    }
+}, {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003990746",
+        "name": "Tea Tree Oil",
+        "description": "Tea Tree Oil (Melaleuca Alternifolia) 10ml",
+        "price": 6.99,
+        "category": 4,
+        "image_url": "https://images.unsplash.com/photo-1614612241108-0625eed31430?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "image": "teatree-product.jpg"
+    }
+}, {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004111503",
+        "name": "Thyme Essential Oil (Thymus vulgaris) 10ml",
+        "price": 5.99,
+        "category": 4,
+        "image_url": "https://images.unsplash.com/photo-1606072104299-cdaab62c0a07?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGh5bWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+        "image": "thyme-product.jpg"
+    }
+}, {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004230059",
+        "name": "Ylang Ylang Oil",
+        "description": "Ylang Ylang Oil (Cananga odorata) 10ml",
+        "price": 6.99,
+        "category": 4,
+        "image_url": "https://cdn.pixabay.com/photo/2016/01/02/10/37/ylang-ylang-flower-1118057_960_720.jpg",
+        "image": "ylangylang-product.jpg"
+    }
+}, {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004310089",
+        "name": "Dream cather with beads",
+        "description": "Dream cather with beads. Cotton, feathers.",
+        "price": 25.99,
+        "category": 5,
+        "image_url": "https://images.pexels.com/photos/1459582/pexels-photo-1459582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "image": "dream1-product.jpg"
+    }
+}, {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004610254",
+        "name": "Moon Dream Cather",
+        "description": "Moon Dream Cather with feathers and metal details",
+        "price": 29.99,
+        "category": 5,
+        "image_url": "https://images.pexels.com/photos/1573248/pexels-photo-1573248.jpeg",
+        "image": "dream2-rpoduct.jpg"
+    }
+}, {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004650050",
+        "name": "Dream Cather with beads",
+        "description": "Dream Cather with beads and feather details",
+        "price": 34.99,
+        "category": 5,
+        "image_url": "https://cdn.pixabay.com/photo/2019/07/16/08/09/dream-catcher-4341302_1280.jpg",
+        "image": "dream4-product.jpg"
+    }
+}, {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004821375",
+        "name": "Dream Cather with feathers",
+        "description": "Dream Cather with feather details",
+        "price": 20.99,
+        "category": 5,
+        "image_url": "https://cdn.pixabay.com/photo/2019/02/12/19/58/dream-catcher-3993075__340.jpg",
+        "image": "dream5-product.jpg"
+    }
+}, {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004900522",
+        "name": "White dream cather",
+        "description": "White dream cather with feather details",
+        "price": 16.99,
+        "category": 5,
+        "image_url": "https://images.unsplash.com/photo-1543599843-c675c622a678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MzYwMDY4N3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=416&q=60",
+        "image": "dream-product.jpg"
+    }
+}, {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004910158",
+        "name": "Clear Quartz Ball",
+        "description": "Weight - 166g. Clear Quartz Ball",
+        "price": 62.99,
+        "category": 6,
+        "image_url": "https://cdn.pixabay.com/photo/2014/02/13/14/32/ball-265334__340.jpg",
+        "image": "ball-product.jpg"
+    }
+}, {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004910477",
+        "name": "Clear Quartz Point",
+        "description": "Weight - 125g. 12cm x 3cm. Clear Quartz point",
+        "price": 39.99,
+        "category": 6,
+        "image_url": "https://images.pexels.com/photos/3725709/pexels-photo-3725709.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "image": "clear-point-product.jpg"
+    }
+}, {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004940703",
+        "name": "Pink Quartz Ball",
+        "description": "Weight - 345g. Pink Quartz Ball",
+        "price": 65.99,
+        "category": 6,
+        "image_url": "https://images.pexels.com/photos/6766254/pexels-photo-6766254.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "image": "quartz-ball-product.jpg"
+    }
+}, {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004991006",
+        "name": "Yellow Quartz Point",
+        "description": "Weight - 125g. 12cm x 3cm. Yellow Quartz point",
+        "price": 39.99,
+        "category": 6,
+        "image_url": "https://cdn.pixabay.com/photo/2017/09/06/21/43/crystal-2723145__340.jpg",
+        "image": "quartzpoint-product.jpg"
+    }
+}, {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004991162",
+        "name": "Green Quartz Point",
+        "description": "Weight - 125g. 12cm x 3cm. Green Quartz point",
+        "price": 28.99,
+        "category": 4,
+        "image_url": "https://images.pexels.com/photos/3725752/pexels-photo-3725752.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "image": "qurtz-green-product.jpg"
+    }
+}]
