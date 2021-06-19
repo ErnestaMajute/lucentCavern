@@ -18,13 +18,14 @@ html {
     background-color: #f1d8e2;
 }
 
+/* Home page */
+
 .about-container {
     background-color: #ceeaf7;
 }
 
 .products-container {
-    background-color: #f5d7e0;
-    
+    background-color: #f5d7e0;  
 }   
 
 .mini-card {
@@ -37,4 +38,41 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Products page */
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.favourites-icon {
+    color: #0000003f;
+    font-size: 2.5vh;
+}
+
+.overlay-products {
+    background: #f5d7e0;
+    margin-top: 80px;
+    color: black;
+}
+
+/* Products @media */
+
+@media (max-width: 575.98px) {
+    .card-img-top {
+        width: 100%;
+        height: 50vw;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .card-img-top {
+        width: 100%;
+        height: 26vw;
+        object-fit: cover;
+    }
 }
