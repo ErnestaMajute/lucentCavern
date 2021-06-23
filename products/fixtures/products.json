@@ -174,7 +174,7 @@
         "name": "Quartz, Moonstone & Turquoise Bracelet",
         "description": "Quartz, Moonstone & Turquoise Bracelet",
         "price": 9.99,
-        "category": 1,
+        "category": 2,
         "image_url": "https://cdn.pixabay.com/photo/2015/03/09/14/14/gemstone-bracelet-665753_640.jpg",
         "image": "gemstone-bracelet-product.jpg"
     }
@@ -653,7 +653,7 @@
         "name": "Green Quartz Point",
         "description": "Weight - 125g. 12cm x 3cm. Green Quartz point",
         "price": 28.99,
-        "category": 4,
+        "category": 6,
         "image_url": "https://images.pexels.com/photos/3725752/pexels-photo-3725752.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
         "image": "qurtz-green-product.jpg"
     }
