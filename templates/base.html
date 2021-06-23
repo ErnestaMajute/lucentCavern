@@ -24,8 +24,13 @@
     {% block extra_css %}
     {% endblock %}
 
-    {% block extra_js %}
+    {% block corejs %}
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="{% static 'js/main.js' %}"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    {% endblock %}
+
+    {% block extra_js %}
     {% endblock %}
 
     <title>Lucent Cavern {% block extra_title %}{% endblock %}</title>
