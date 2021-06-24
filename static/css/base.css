@@ -60,13 +60,13 @@ html {
 .overlay-products, .overlay-product {
     background: #f8f9facc;
     color: black;
-    min-height: 100%;
+    min-height: 100vh;
 	width: 100%;
 }
 
 /* Product page */
 
-.product-container {
+.container-margin {
     margin-top: 80px;
 }
 
