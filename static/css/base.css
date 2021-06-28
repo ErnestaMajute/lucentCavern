@@ -145,11 +145,11 @@ html {
 }
 
 @media (max-width: 293px) {
-    .universal-margin, .container-margin {
+    .universal-margin {
         margin-top: 90px;
     }
 
     .container-margin {
-        margin-top: 160px;
+        margin-top: 130px;
     }
 }
