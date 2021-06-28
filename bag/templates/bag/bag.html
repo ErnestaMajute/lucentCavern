@@ -19,7 +19,7 @@
                     
                     {% for item in bag_items %}
                         <div class="row">
-                            <div class="col-6 mb-3">
+                            <div class="container-image col-6 mb-3">
                                 {% include "bag/bag-image.html" %}
                             </div>
                             <div class="col-6 mb-3">
@@ -65,7 +65,10 @@
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
-                                        <img class="img-fluid" src="{{ item.product.image.url }}">
+                                        <div class="container-image">
+                                            <img class="img-fluid" src="{{ item.product.image.url }}">
+                                            <a class="remove-btn"><i class="fas fa-times-circle"></i></a>
+                                        </div>
                                     </td>
                                     <td class="py-4">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>

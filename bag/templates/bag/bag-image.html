@@ -1,5 +1,6 @@
 {% if item.product.image %}
     <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+    <a class="remove-btn"><i class="fas fa-times-circle"></i></a>
 {% else %}
     <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
 {% endif %}
