@@ -78,6 +78,12 @@ html {
 /* Bag page */
 /* https://www.w3schools.com/howto/howto_css_button_on_image.asp */
 
+.img-bag {
+    width: auto;
+    height: 17vh;
+    object-fit: cover;
+}
+
 .container-image {
     position: relative;
 
