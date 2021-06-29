@@ -1,6 +1,7 @@
 {% if item.product.image %}
     <img class="img-bag" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-    <a class="remove-btn"><i class="fas fa-times-circle"></i></a>
+    <a class="delete-btn delete-item" id="delete_{{ item.item_id }}"><i class="fas fa-times-circle"></i></a>
 {% else %}
     <img class="img-bag" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+    <a class="delete-btn delete-item" id="delete_{{ item.item_id }}"><i class="fas fa-times-circle"></i></a>
 {% endif %}
