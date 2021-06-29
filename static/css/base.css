@@ -94,7 +94,7 @@ html {
 
 }
 
-.container-image .remove-btn {
+.container-image .delete-btn {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -111,7 +111,7 @@ html {
     background-color: white;
 }
 
-.container-image .remove-btn:hover {
+.container-image .delete-btn:hover {
     background-color: black;
     color: #f1d8e2;
 }
@@ -137,14 +137,14 @@ html {
 /* Bag @media */
 
 @media (max-width: 420px) {
-    .container-image .remove-btn {
+    .container-image .delete-btn {
         top: 6%;
         left: 10%;
     }
 }
 
 @media (min-width: 420px) and (max-width: 575.95px) {
-    .container-image .remove-btn {
+    .container-image .delete-btn {
         top: 3%;
         left: 5%;
     }
