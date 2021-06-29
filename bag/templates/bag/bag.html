@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 
 {% block content %}
@@ -27,7 +28,7 @@
                             </div>
                             <div class="col-6 order-sm-last">
                                 <p class="my-0">Price for Each: €{{ item.product.price }}</p>
-                                <p><strong>Subtotal: </strong>€{{ item.product.price }}</p>
+                                <p><strong>Subtotal: </strong>€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                             </div>
                             <div class="col-12 col-sm-6">
                                 {% include "bag/bag-form.html" %}
@@ -81,7 +82,7 @@
                                         {% include "bag/bag-form.html" %}
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">€{{ item.product.price }}</p>
+                                        <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
