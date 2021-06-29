@@ -28,7 +28,7 @@ $(document).ready(function () {
         var plusDisabled = currentValue > 19;
         $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
         $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
-    }
+    };
 
     // Ensure proper enabling/disabling of all inputs on page load
     var allQtyInputs = $('.qty_input');
@@ -61,5 +61,11 @@ $(document).ready(function () {
         $(closestInput).val(currentValue - 1);
         var itemId = $(this).data('item_id');
         handleEnableDisable(itemId);
+    });
+
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
     });
 });
