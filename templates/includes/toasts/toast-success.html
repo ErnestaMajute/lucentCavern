@@ -8,22 +8,22 @@
             <div class="toast-body text-dark">
                 {{ message }}
                 <hr>
-            {% if grand_total %}
+                {% if grand_total %}
                 <p class="bg-dark text-light text-center fs-6">My Bag ({{ product_count }})</p>
                 <div class="bag-notification-wrapper">
                     {% for item in bag_items %}
-                        <div class="row">
-                            <div class="col-4 my-1 offset-1">
-                                <img class="w-100" src="{{ item.product.image.url }}">
-                            </div>
-                            <div class="col-5">
-                                <p class="my-0 text-dark"><strong>{{ item.product.name }}</strong></p>
-                                <p class="my-0 text-dark small">Qty: {{ item.quantity }}</p>
-                            </div>
-                            <div class="col-2">
-                                <i class="fas fa-trash-alt text-dark"></i>
-                            </div>
+                    <div class="row">
+                        <div class="col-4 my-1 offset-1">
+                            <img class="w-100" src="{{ item.product.image.url }}">
                         </div>
+                        <div class="col-5">
+                            <p class="my-0 text-dark"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 text-dark small">Qty: {{ item.quantity }}</p>
+                        </div>
+                        <div class="col-2">
+                            <i class="fas fa-trash-alt text-dark"></i>
+                        </div>
+                    </div>
                     {% endfor %}
                 </div>
                 <div class="row">
@@ -35,9 +35,9 @@
                             </p>
                         </strong>
                         {% if free_delivery_delta > 0 %}
-                            <p class=" mb-0 p-2 bg-danger text-black text-center">
-                                Spend <strong>${{ free_delivery_delta }}</strong> extra to get free delivery!
-                            </p>
+                        <p class=" mb-0 p-2 bg-danger text-black text-center">
+                            Spend <strong>${{ free_delivery_delta }}</strong> extra to get free delivery!
+                        </p>
                         {% endif %}
                         <a href="{% url 'products' %}" class="mt-4 btn btn-dark rounded-0 btn-mg w-100">
                             <span class="icon">
@@ -47,7 +47,7 @@
                         </a>
                     </div>
                 </div>
-        {% endif %}
+                {% endif %}
             </div>
         </div>
     </div>
