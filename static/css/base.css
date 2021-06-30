@@ -116,6 +116,15 @@ html {
     color: #f1d8e2;
 }
 
+/* Boutique Ado message container styling */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
 /* Products @media */
 
 @media (max-width: 575.98px) {
