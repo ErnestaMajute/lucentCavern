@@ -125,6 +125,21 @@ html {
     z-index: 99999999999;
 }
 
+.overflow-toast {
+    overflow: visible;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.message-toast {
+    background-color: #ffffff;
+    border: 2px black;
+}
+
 /* Products @media */
 
 @media (max-width: 575.98px) {
