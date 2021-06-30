@@ -37,6 +37,7 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url)
 
 
+# Function from BoutiqueAdo mini project
 def modify_bag(request, item_id):
     """Modify the quantity of the specified product to the specified amount"""
 
