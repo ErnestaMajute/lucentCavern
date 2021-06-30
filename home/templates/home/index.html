@@ -45,8 +45,11 @@
                     <div class="col-lg-4">
                         <div class="card my-5 bg-dark text-white">
                             <img src="/media/crystal-mini.jpg" class="card-img mini-card" alt="raw crystals">
-                            <div class="card-img-overlay">
-                                <p class="card-title centered fs-4">Raw Crystals</p>   
+                            <div class="card-img-overlay"> 
+                                <a class="card-title text-light centered text-decoration-none fs-4"
+                                    href="{% url 'products' %}?category=raw_crystals">
+                                        Raw Crystals
+                                </a>  
                             </div>
                         </div>
                     </div>
@@ -54,7 +57,10 @@
                         <div class="card my-5 bg-dark text-white">
                             <img src="/media/ring-mini.jpg" class="card-img mini-card" alt="jewellery">
                             <div class="card-img-overlay">
-                                <p class="card-title centered fs-4">Jewellery</p>  
+                                <a class="card-title text-light centered text-decoration-none fs-4"
+                                    href="{% url 'products' %}?category=jewellery">
+                                        Jewellery
+                                </a>  
                             </div>
                         </div>
                     </div>
@@ -62,14 +68,17 @@
                         <div class="card my-5 bg-dark text-white">
                             <img src="/media/lamp-mini.jpg" class="card-img mini-card" alt="salt lamps">
                             <div class="card-img-overlay">
-                                <p class="card-title centered fs-4">Salt Lamps</p>
+                                <a class="card-title text-light centered text-decoration-none fs-4"
+                                    href="{% url 'products' %}?category=salt_lamps">
+                                        Salt lamps
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center">
                     <h5>
-                        <a class="btn btn-md my-5 btn-dark" href="#" role="button">View All</a>
+                        <a class="btn btn-md my-5 btn-dark" href="{% url 'products' %}" role="button">View All</a>
                     </h5>
                 </div>
             </div>
