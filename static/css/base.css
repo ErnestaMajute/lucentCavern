@@ -140,6 +140,13 @@ html {
     border: 2px black;
 }
 
+/*Checkout page */
+.checkout-image {
+    height: 80px;
+    object-fit: cover;
+}
+
+
 /* Products @media */
 
 @media (max-width: 575.98px) {
@@ -181,5 +188,14 @@ html {
 
     .container-margin {
         margin-top: 130px;
+    }
+}
+
+/* Checkout @media */
+
+@media (max-width: 420px) {
+    .checkout-image {
+        height: 50px;
+        object-fit: cover;
     }
 }
