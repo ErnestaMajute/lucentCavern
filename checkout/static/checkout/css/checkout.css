@@ -3,6 +3,10 @@
     object-fit: cover;
 }
 
+.checkout-button{
+    width: 190px;
+}
+
 /* Checkout @media */
 
 @media (max-width: 420px) {
