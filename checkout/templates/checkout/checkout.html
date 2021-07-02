@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
+<!-- Template's core taken from Boutique Ado miniproject -->
 {% block content %}
     <div class="overlay-product">
         <div class="container container-margin">
@@ -53,7 +54,7 @@
                         <div class="col-7">
                             <div class="mb-2">
                                 <label for="discountcode" class="form-label"><i class="fas fa-tags fs-5"></i> Discount Code:</label>
-                              </div>
+                            </div>
                             <p class="mb-1">Total:</p>
                             <p class="mb-1">Delivery:</p>
                             <p class="mb-1 fw-bolder">Grand Total:</p>
@@ -63,9 +64,6 @@
                             <p class="my-0">€{{ total | floatformat:2 }}</p>
                             <p class="my-0">€{{ delivery | floatformat:2 }}</p>
                             <p class="my-0 fw-bolder">€{{ grand_total | floatformat:2 }}</p>
-                        </div>
-                        <div class="col-12">
-                            
                         </div>
                     </div>
                 </div>
@@ -78,7 +76,7 @@
                             {{ order_form.email | as_crispy_field }}
                         </fieldset>
                         <fieldset class="w-90 mb-3">
-                            <legend class="fieldset-label text-dark w-auto fs-6 fw-bold">Delivery Details</legend>
+                            <legend class="fieldset-label text-dark w-auto fs-6 fw-bold"><i class="fas fa-route fs-4"></i> Delivery Details</legend>
                             {{ order_form.phone_number | as_crispy_field }}
                             {{ order_form.street_address1 | as_crispy_field }}
                             {{ order_form.street_address2 | as_crispy_field }}
@@ -99,31 +97,29 @@
                             </div>
                         </fieldset>
                         <fieldset class="mt-4">
-                            <legend class="fieldset-label text-black fs-6 fw-bold px-2 mb-3">Payment</legend>
-                            <p class="text-muted small">Please fill out the Details forms below to complete your order</p>
+                            <legend class="fieldset-label text-black fs-6 fw-bold px-2 mb-3"><i class="fas fa-credit-card fs-4"></i> Payment</legend>
                             <!-- A Stripe card element will go here -->
                             <div class="mb-3" id="card-element"></div>
                             <!-- Used to display form errors -->
                             <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                         </fieldset>
-
+                        <div class="row">
+                            <div class="submit-button text-center mt-5 mb-2">                    
+                                <a href="{% url 'view_bag' %}" class="mt-4 btn btn-dark rounded-0 checkout-button">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">Change Bag</span>
+                                </a>
+                                <button id="submit-button" class="mt-4 btn btn-dark rounded-0 checkout-button">
+                                    <span class="font-weight-bold text-uppercase">Complete Order</span>
+                                    <span class="icon">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
                     </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="submit-button text-center mt-5 mb-2">                    
-                    <a href="{% url 'view_bag' %}" class="mt-4 btn btn-dark rounded-0 checkout-button">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Change Bag</span>
-                    </a>
-                    <button id="submit-button" class="mt-4 btn btn-dark rounded-0 checkout-button">
-                        <span class="font-weight-bold text-uppercase">Complete Order</span>
-                        <span class="icon">
-                            <i class="fas fa-lock"></i>
-                        </span>
-                    </button>
                 </div>
             </div>
         </div>
