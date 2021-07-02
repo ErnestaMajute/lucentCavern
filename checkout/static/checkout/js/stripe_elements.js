@@ -104,7 +104,7 @@ form.addEventListener('submit', function(ev) {
                     </span>
                     <span>${result.error.message}</span>`;
                 $(errorDiv).html(html);
-                $('#payment-form').fadeToggle(100);
+                $('#payment-form').fadeToggle(9000);
                 card.update({ 'disabled': false});
                 $('#submit-button').attr('disabled', false);
             } else {
