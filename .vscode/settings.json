@@ -20,7 +20,7 @@
       "**/CVS": true
    },
    "files.autoSave": "afterDelay",
-   "workbench.colorTheme": "Visual Studio Dark",
+   "workbench.colorTheme": "Default Dark+",
 "editor.defaultFormatter": "HookyQR.beautify",
 "editor.autoSave": "on"
 }

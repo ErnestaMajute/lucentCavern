@@ -65,14 +65,7 @@
                             <p class="my-0 fw-bolder">€{{ grand_total | floatformat:2 }}</p>
                         </div>
                         <div class="col-12">
-                            <fieldset class="mt-4">
-                                <legend class="fieldset-label text-black fs-6 fw-bold px-2 mb-3">Payment</legend>
-                                <p class="text-muted small">Please fill out the Details forms below to complete your order</p>
-                                <!-- A Stripe card element will go here -->
-                                <div class="mb-3" id="card-element"></div>
-                                <!-- Used to display form errors -->
-                                <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
-                            </fieldset>
+                            
                         </div>
                     </div>
                 </div>
@@ -85,6 +78,7 @@
                             {{ order_form.email | as_crispy_field }}
                         </fieldset>
                         <fieldset class="w-90 mb-3">
+                            <legend class="fieldset-label text-dark w-auto fs-6 fw-bold">Delivery Details</legend>
                             {{ order_form.phone_number | as_crispy_field }}
                             {{ order_form.street_address1 | as_crispy_field }}
                             {{ order_form.street_address2 | as_crispy_field }}
@@ -103,6 +97,14 @@
                                     </label>
                                 {% endif %}
                             </div>
+                        </fieldset>
+                        <fieldset class="mt-4">
+                            <legend class="fieldset-label text-black fs-6 fw-bold px-2 mb-3">Payment</legend>
+                            <p class="text-muted small">Please fill out the Details forms below to complete your order</p>
+                            <!-- A Stripe card element will go here -->
+                            <div class="mb-3" id="card-element"></div>
+                            <!-- Used to display form errors -->
+                            <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                         </fieldset>
 
                     </form>
