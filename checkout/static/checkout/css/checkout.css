@@ -7,6 +7,16 @@
     width: 190px;
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color:#93a2b1 !important;
+}
+
 /* Checkout @media */
 
 @media (max-width: 420px) {
