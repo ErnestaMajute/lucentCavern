@@ -7,7 +7,7 @@
             </div>
             <div class="toast-body text-dark">
                 {{ message }}               
-                {% if grand_total %}
+                {% if grand_total and not on_profile_page %}
                     <hr>
                     <p class="bg-dark text-light text-center fs-6">My Bag ({{ product_count }})</p>
                     <div class="bag-notification-wrapper">
