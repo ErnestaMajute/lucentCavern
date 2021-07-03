@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+<!-- Template's core taken from Boutique Ado miniproject -->
+{% block content %}
+    <div class="overlay-product">
+        <div class="container container-margin">
+            <div class="row">
+                <div class="col">
+                    <h2 class="logo-font mt-4">My Profile</h2>
+                    <hr class="mb-5">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
