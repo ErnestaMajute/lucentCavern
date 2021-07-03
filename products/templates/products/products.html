@@ -69,6 +69,12 @@
                                                     </a>
                                                 </p>
                                             {% endif %}
+                                        {% if request.user.is_superuser %}
+                                            <p class="text-end">
+                                                <a class="text-dark" href="{% url 'edit_product' product.id %}"><i class="fas fa-edit"></i></a> | 
+                                                <a class="text-dark" href="{% url 'delete_product' product.id %}"><i class="fas fa-eraser"></i></a>
+                                            </p>
+                                        {% endif %}
                                         </div>
                                     </div>
                                 </div>
