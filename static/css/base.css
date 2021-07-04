@@ -60,7 +60,7 @@ html {
 .overlay-products, .overlay-product {
     background: #f8f9facc;
     color: black;
-    min-height: 100vh;
+    min-height: 80vh;
 	width: 100%;
 }
 
