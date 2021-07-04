@@ -7,7 +7,7 @@ class UserFavoriteslistAdmin(admin.ModelAdmin):
     list_display = (
         'user_profile',
         'favorited_products',
-        )
+    )
 
 
 admin.site.register(UserFavoriteslist)
