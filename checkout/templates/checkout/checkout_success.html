@@ -15,7 +15,7 @@
 
 {% block content %}
     <div class="overlay-product">
-        <div class="container container-margin mb-2">
+        <div class="container container-margin mb-0">
             <div class="row">
                 <div class="col">
                     <h2 class="text-start mx-5 mt-5">Thank You!</h2>
@@ -191,7 +191,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-12 text-center">
                     {% if from_profile %}
                         <a href="{% url 'profile' %}" class="btn rounded-0 btn btn-dark my-4 btn-md">
@@ -201,7 +201,7 @@
                             <span class="text-uppercase">Back to Profile</span>
                         </a>
                     {% else %}
-                        <a href="{% url 'products' %}" class="rounded-0 btn btn-dark my-4 btn-md">
+                        <a href="{% url 'products' %}" class="rounded-0 btn btn-dark my-4 mb-5 btn-md">
                             <span class="text-uppercase">Take a look at our other products</span>
                         </a>
                     {% endif %}
