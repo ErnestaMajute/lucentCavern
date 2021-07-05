@@ -1,23 +1,24 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from products.models import Product
 from django.contrib import messages
 from .models import UserFavoriteslist
 from profiles.models import UserProfile
-
 # Create your views here.
 
 
 def view_favoriteslist(request):
     """ A view that renders the bag contents page """
-    user = UserProfile.objects.get(user=request.user)
-    favoriteslist = Product.objects.filter(
-        userfavoriteslists__user_profile=user)
-    context = {
-        'favoriteslist': favoriteslist,
-    }
-    return render(request, 'favoriteslist/favoriteslist.html', context)
+    if request.user.is_authenticated:
+        # Fetch the list of products that the user favorited
+        user_favourites = UserFavoriteslist.objects.get(user_profile=request.user.profile)
+        products = Product.objects.filter(id__in=[val.id for val in user_favourites.favorited_products.all()])
+        context = {
+            'favoritedproducts': products,
+        }
+        return render(request, 'favoriteslist/favoriteslist.html', context)
+    return redirect(reverse('home'))
 
 
 @login_required
