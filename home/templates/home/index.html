@@ -29,7 +29,7 @@
     <div class="container-fluid about-container">
         <div class="row">
             <div class="col-10 mx-auto my-auto text-center">
-                <h3 class="logo-font text-center mt-5 text-dark">Our Story</h3>
+                <h3 class="logo-font text-center mt-5 text-dark display-6">Our Story</h3>
                 <hr class="w-50 mx-auto mb-5 text-dark">
                 <div class="text-center text-dark w-90 mb-5">
                     <small>
@@ -43,7 +43,7 @@
     <div class="container-fluid products-index-container h-auto">
         <div class="row h-100">
             <div class="my-5 mx-auto">
-                <h3 class="logo-font text-center text-dark">Favourite Collections</h3>
+                <h3 class="logo-font text-center text-dark display-6">Favorite Collections</h3>
                 <hr class="w-50 mx-auto mb-4 text-dark">
                 <div class="container">
                     <div class="row">
@@ -90,10 +90,25 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid subscribe-container h-50">
-        <div class="row h-100">
-            <div class="my-auto mx-auto">
-                <h3 class="logo-font text-center text-dark">Subscribe</h3>
+    <div class="container-fluid about-container">
+        <div class="row">
+            <div class="col-10 mx-auto my-auto text-center">
+                <h3 class="logo-font text-center mt-5 text-dark display-6">Subscribe</h3>
+                <hr class="w-50 mx-auto mb-4 text-dark">
+                <div class="text-center text-dark w-90 mb-5">
+                    <small>
+                        Subscribe for our weekly newsletter to see the latest products, updates and offers!
+                    </small>
+                </div>
+                <form action="{% url 'subscriptions_join' %}" method="POST">
+                {% csrf_token %}
+                    <div class="mb-3">
+                        <input type="email" class="form-control text-center" id="subscriptions-id"  placeholder="Your Email Address" name="subscription_email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text small">We'll never share your email with anyone else.</div>
+                    </div>
+                    <button type="submit" class="mt-5 mb-5 btn btn-dark rounded-0 btn btn-md  text-uppercase">Submit</button>
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                </form>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from newsletter import views
+from subscriptions import views
 
 
 urlpatterns = [
