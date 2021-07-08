@@ -4,35 +4,28 @@
 
 {% block content %}
     <div class="overlay-products">
-        <div class="container-fluid universal-margin">
+        <div class="container universal-margin">
             <div class="row">
                 <div class="col text-center header-margin h-100">
-                        <a class="text-dark text-decoration-none" href="">
-                            <h2 class="logo-font mt-5">Blog</h2>
-                        </a>
-                    <hr class="w-50 mx-auto mb-5">
+                    <h2 class="logo-font mt-5 display-5">{{ object.title }}</h2>
+                    <hr class="w-25 mx-auto mb-5">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <!-- Blog Entries Column -->
-                    <div class="col-md-8 mt-3 left">
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-md-8 card mb-4  mt-3 left  top">
-                                <div class="card-body">
-                                  <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
-                                  <p class="text-dark">{{ object.author }} | {{ object.created_on }}</p>
-                                  <p class="card-text">{{ object.content | safe }}</p>
-                                </div>
-                              </div>
-                              
-                            </div>
-                          </div>
-                    </div>
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h3>{{ object.subtitle }}</h3>
+                    <p class="text-capitalize">Author: {{ object.author }}<br>Published: {{ object.created_on }}</p>
+                    <hr class="w-100 mt-5">
                 </div>
-            </div> 
+            </div>
+            <div class="row">
+                <div class="col-12 mx-auto mb-5 text-justify">
+                    <p class="lead">{{ object.content }}</p>
+                    <hr class="w-100 mt-5">
+                    <a href="{% url 'blog' %}"
+                        class="mt-5 mb-5 btn btn-dark rounded-0 btn btn-dark btn-md text-uppercase">Back</a>
+                </div>
+            </div>
         </div>
     </div>
-
 {% endblock %}
