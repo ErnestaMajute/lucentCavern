@@ -2,7 +2,7 @@ from django.db import models
 from profiles.models import UserProfile
 
 
-# https://djangocentral.com/building-a-blog-application-with-django/
+# Core from https://djangocentral.com/building-a-blog-application-with-django/
 class BlogPost(models.Model):
 
     author = models.ForeignKey(UserProfile,

@@ -4,12 +4,10 @@ from django.contrib import messages
 
 from products.models import Product
 
-# Create your views here.
-
 
 # Function from BoutiqueAdo mini project
 def view_bag(request):
-    """ A view to to render the bag contents page """
+    """ A view to render the bag contents page """
 
     return render(request, 'bag/bag.html')
 
@@ -39,7 +37,9 @@ def add_to_bag(request, item_id):
 
 # Function from BoutiqueAdo mini project
 def modify_bag(request, item_id):
-    """Modify the quantity of the specified product to the specified amount"""
+    """
+    Modify the quantity of the specified product to the specified amount
+    """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))

@@ -6,6 +6,9 @@ from products.models import Product
 
 # Function from BoutiqueAdo mini project
 def bag_contents(request):
+    """
+    Provide Cart-Content throughout the whole website
+    """
 
     bag_items = []
     total = 0

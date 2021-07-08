@@ -3,19 +3,20 @@
 
 
 {% block content %}
+
     <div class="overlay-products">
         <div class="container-fluid universal-margin">
             <div class="row">
+                <!--Container Header-->
                 <div class="col text-center header-margin h-100">
-                        <a class="text-dark text-decoration-none" href="">
-                            <h2 class="logo-font mt-5 display-5">Our Blog</h2>
-                        </a>
+                    <h2 class="logo-font mt-5 display-5">Our Blog</h2>
                     <hr class="w-50 mx-auto mb-5">
                 </div>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mt-3  mb-5 center">
+                        <!-- Set Up core from https://simpleisbetterthancomplex.com/series/2017/09/18/a-complete-beginners-guide-to-django-part-3.html-->
                         {% for post in blogpost_list %}
                         <div class="card mb-4 rounded-0 border-dark bg-transparent">
                             <div class="card-body">
