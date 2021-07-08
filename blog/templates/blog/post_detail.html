@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <div class="overlay-products">
+        <div class="container-fluid universal-margin">
+            <div class="row">
+                <div class="col text-center header-margin h-100">
+                        <a class="text-dark text-decoration-none" href="">
+                            <h2 class="logo-font mt-5">Blog</h2>
+                        </a>
+                    <hr class="w-50 mx-auto mb-5">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- Blog Entries Column -->
+                    <div class="col-md-8 mt-3 left">
+                        <div class="container">
+                            <div class="row">
+                              <div class="col-md-8 card mb-4  mt-3 left  top">
+                                <div class="card-body">
+                                  <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+                                  <p class="text-dark">{{ object.author }} | {{ object.created_on }}</p>
+                                  <p class="card-text">{{ object.content | safe }}</p>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+{% endblock %}
