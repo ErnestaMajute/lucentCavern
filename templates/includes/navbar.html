@@ -1,10 +1,12 @@
+<!-- Navbar -->
 <nav class="navbar row navbar-expand-lg navbar-light navbar-colors">
     <div class="container-fluid text-white">
+        <!-- Navbar Toggle button -->
         <button class="navbar-toggler mb-2 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
             aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+        <!-- Navbar Brand with links -->
         <div class="collapse navbar-collapse mt-20 mt-lg-0" id="navbarToggler">
             <a class="navbar-brand text-white" href="{% url 'home' %}"><h2 class="mb-0 mt-lg-0 mt-4"><strong><i class="fas fa-icicles fs-2 fa-flip-horizontal"></i>Lucent Cavern</strong></h2></a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -16,6 +18,7 @@
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Products
                     </a>
+                    <!-- Categories Dropdown Menu -->
                     <ul class="dropdown-menu" aria-labelledby="productsDropdown">
                         <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
                         <li><a class="dropdown-item" href="{% url 'products' %}?category=raw_crystals">Raw Crystals</a></li>
@@ -32,6 +35,7 @@
                 <li class="nav-item">
                     <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
                 </li>
+                <!-- Search field -->
                 <li class="nav-item">
                     <form class="d-flex" method="GET" action="{% url 'products' %}">
                         <input class="form-control me-2 rounded-0" type="search" placeholder="Search" name="q" aria-label="Search">
@@ -40,7 +44,7 @@
                 </li>
             </ul>
         </div>
-
+        <!-- My Acount Dropdown Menu -->
         <div class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="#" id="accountDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,6 +64,7 @@
                 {% endif %}
             </div>
         </div>
+        <!-- Icon with Grand Total -->
         <div class="nav-item">
             <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link text-white"
                 href="{% url 'view_bag' %}">
