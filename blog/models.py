@@ -18,9 +18,6 @@ class BlogPost(models.Model):
                             max_length=250, default=None)
     created_on = models.DateTimeField(auto_now_add=True, null=False)
     updated_on = models.DateTimeField(auto_now=True, null=False)
-    title_image = models.ImageField(null=True, blank=True)
-    title_image_url = models.URLField(max_length=1024,
-                                      null=True, blank=True)
 
     def __str__(self):
         return self.title
