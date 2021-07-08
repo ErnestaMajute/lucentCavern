@@ -12,6 +12,7 @@
         <div class="container container-margin">
             <div class="row">
                 <div class="col">
+                    <!--Container Header-->
                     <h2 class="logo-font mt-4">Checkout</h2>
                     <hr class="mb-5">
                 </div>
@@ -29,6 +30,7 @@
                         </div>
                     </div>
                     <hr class="mt-1">
+                    <!--Each item details-->
                     {% for item in bag_items %}
                         <div class="row">
                             <div class="col-3 mb-1">
@@ -50,17 +52,14 @@
                         </div>
                         <hr class="mt-1">
                     {% endfor %}
+                    <!--Order Total, Grand Total-->
                     <div class="row text-black text-start">
                         <div class="col-7">
-                            <div class="mb-2">
-                                <label for="discountcode" class="form-label"><i class="fas fa-tags fs-5"></i> Discount Code:</label>
-                            </div>
                             <p class="mb-1">Total:</p>
                             <p class="mb-1">Delivery:</p>
                             <p class="mb-1 fw-bolder">Grand Total:</p>
                         </div>
                         <div class="col-5 text-end">
-                            <input type="text" class="form-control mb-2" id="discountcode" placeholder="e.g. LUCENT20">
                             <p class="my-0">€{{ total | floatformat:2 }}</p>
                             <p class="my-0">€{{ delivery | floatformat:2 }}</p>
                             <p class="my-0 fw-bolder">€{{ grand_total | floatformat:2 }}</p>
@@ -70,11 +69,13 @@
                 <div class="col-12 col-lg-6">
                     <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                         {% csrf_token %}
+                        <!--Personal Details form-->
                         <fieldset class="w-90 mb-3">
                             <legend class="fieldset-label text-dark w-auto fs-6 fw-bold"><i class="fas fa-user fs-4"></i> Personal Details </legend>                           
                             {{ order_form.full_name | as_crispy_field }}
                             {{ order_form.email | as_crispy_field }}
                         </fieldset>
+                        <!--Delivery Details form-->
                         <fieldset class="w-90 mb-3">
                             <legend class="fieldset-label text-dark w-auto fs-6 fw-bold"><i class="fas fa-route fs-4"></i> Delivery Details</legend>
                             {{ order_form.phone_number | as_crispy_field }}
@@ -96,6 +97,7 @@
                                 {% endif %}
                             </div>
                         </fieldset>
+                        <!--Stripe Payment Element-->
                         <fieldset class="mt-4">
                             <legend class="fieldset-label text-black fs-6 fw-bold px-2 mb-3"><i class="fas fa-credit-card fs-4"></i> Payment</legend>
                             <!-- A Stripe card element will go here -->
@@ -105,6 +107,7 @@
                             <!-- Pass the client secret to the view so we can get the payment intent id -->
                             <input type="hidden" value="{{ client_secret }}" name="client_secret">
                         </fieldset>
+                        <!--Buttons-->
                         <div class="row">
                             <div class="submit-button text-center mt-4 mb-5">                    
                                 <a href="{% url 'view_bag' %}" class="mt-4 btn btn-dark rounded-0 checkout-button">
@@ -134,4 +137,3 @@
     {{ client_secret|json_script:"id_client_secret" }}
     <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
-

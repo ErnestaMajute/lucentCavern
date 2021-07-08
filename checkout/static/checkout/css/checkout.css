@@ -26,6 +26,7 @@ select option[value=""] {
     }
 }
 
+/* From Stripe documentation */
 .StripeElement,
 .stripe-style-input {
     box-sizing: border-box;

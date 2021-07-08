@@ -35,6 +35,10 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    A view to return the checkout page.
+    Based on the Botique Ado CI Project and modified to fit this project.
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -109,7 +113,8 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+        # Attempt to prefill the form with any info the
+        # user maintains in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
