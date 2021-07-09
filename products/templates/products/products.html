@@ -20,8 +20,17 @@
             
             <div class="row">
                 <div class="products-container col-10 offset-1 mt-4 mb-5">
-                    <div class="row mt-1 mb-3">
-                        <div class="col-sm-12 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <!--Boutique Ado miniproject row-->
+                    <div class="row mt-1 mb-5">
+                        <div class="col-12 col-md-6 order-md-first">
+                            <p class="mt-3 text-center text-md-start text-sm-center">
+                                {% if search_term or current_categories or current_sorting != 'None_None' %}
+                                    <span class="small"><a class="text-dark" href="{% url 'products' %}">Products Home</a> | </span>
+                                {% endif %}
+                                {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 my-auto text-md-end text-center">
                             <select id="sort-selector" class="form-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}secondary{% else %}black{% endif %}">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
@@ -35,7 +44,7 @@
                     </div>
                     <div class="row">
                         {% for product in products %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3  mb-5">
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
                             <div class="card bg-transparent h-100 border-0">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
