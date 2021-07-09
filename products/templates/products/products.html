@@ -7,19 +7,19 @@
         <div class="container-fluid universal-margin">
             <div class="row">
                 <div class="col text-center header-margin h-100">
-                    <h2 class="logo-font mt-5 display-5">Products</h2>
+                    <h2 class="logo-font mt-md-5 mt-4 display-5">Products</h2>
                     {% for c in current_categories %}
                         <a class="text-dark text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                            <h2 class="logo-font mt-5">{{ c.friendly_name }}</h2>
+                            <h2 class="logo-font mt-md-5 mt-3">{{ c.friendly_name }}</h2>
                         </a>
-                        <hr class="w-50 mx-auto mb-5">
+                        <hr class="w-50 mx-auto mb-md-5 md-1">
                     {% endfor %}
 
                 </div>
             </div>
             
             <div class="row">
-                <div class="products-container col-10 offset-1 mt-4 mb-5">
+                <div class="products-container col-10 offset-1 mt-md-3 mt-1 mb-5">
                     <!--Boutique Ado miniproject row-->
                     <div class="row mt-1 mb-5">
                         <div class="col-12 col-md-6 order-md-first">
