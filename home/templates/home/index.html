@@ -13,7 +13,7 @@
     <div class="container intro-container h-100">
         <div class="row h-100">
             <div class="col-12 my-auto">
-                <h1 class="logo-font text-center fw-bold">
+                <h1 class="logo-font text-center fw-bold intro-header">
                     Healing Crystals & Spiritual Products
                 </h1>
                 <h4 class="logo-font text-center">Free delivery for orders over €{{ free_delivery_threshold }}</h4>
@@ -42,13 +42,13 @@
     </div>
     <div class="container-fluid products-index-container h-auto">
         <div class="row h-100">
-            <div class="my-5 mx-auto">
+            <div class="col-10 my-5 mx-auto">
                 <h3 class="logo-font text-center text-dark display-6">Favorite Collections</h3>
                 <hr class="w-50 mx-auto mb-4 text-dark">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4">
-                            <div class="card my-5 bg-dark text-white">
+                            <div class="card my-5 bg-dark rounded-0 text-white border-0">
                                 <img src="{{ MEDIA_URL }}crystal-mini.jpg" class="card-img mini-card " alt="raw crystals">
                                 <div class="card-img-overlay"> 
                                     <a class="card-title text-light centered text-decoration-none fs-4"
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="card my-5 bg-dark text-white">
+                            <div class="card my-5 bg-dark rounded-0 text-white border-0">
                                 <img src="{{ MEDIA_URL }}ring-mini.jpg" class="card-img mini-card" alt="jewellery">
                                 <div class="card-img-overlay">
                                     <a class="card-title text-light centered text-decoration-none fs-4"
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="card my-5 bg-dark text-white border-0">
+                            <div class="card my-5 bg-dark text-white rounded-0 border-0">
                                 <img src="{{ MEDIA_URL }}lamp-mini.jpg" class="card-img mini-card" alt="salt lamps">
                                 <div class="card-img-overlay">
                                     <a class="card-title text-light centered text-decoration-none fs-4"
@@ -103,7 +103,7 @@
                 <form action="{% url 'subscriptions_join' %}" method="POST">
                 {% csrf_token %}
                     <div class="mb-3">
-                        <input type="email" class="form-control text-center" id="subscriptions-id"  placeholder="Your Email Address" name="subscription_email" aria-describedby="emailHelp">
+                        <input type="email" class="form-control text-center rounded-0" id="subscriptions-id"  placeholder="Your Email Address" name="subscription_email" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text small">We'll never share your email with anyone else.</div>
                     </div>
                     <button type="submit" class="mt-5 mb-5 btn btn-dark rounded-0 btn btn-md  text-uppercase">Submit</button>

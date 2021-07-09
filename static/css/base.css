@@ -20,6 +20,10 @@ html {
 
 /* Home page */
 
+.intro-header {
+    margin-top: 140px;
+}
+
 .about-container {
     background-color: #ceeaf7b5;
 }
