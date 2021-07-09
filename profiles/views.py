@@ -4,9 +4,6 @@ from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
 
-from .models import UserProfile
-from .forms import UserProfileForm
-
 from checkout.models import Order
 
 
