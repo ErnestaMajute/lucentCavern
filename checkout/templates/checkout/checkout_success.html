@@ -30,11 +30,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col mx-5">
+                <div class="col">
                     <div class="p-2 confirmation-container p-5 border border-1 border-dark w-auto">
                         <div class="row">
                             <div class="col">
-                                <p class="fw-bolder">Order (no.: {{ order.order_number }}) Info:</p>
+                                <p class="fw-bolder">Order 
+                                    <a href="{% url 'order_history' order.order_number %}"
+                                        title="{{ order.order_number }}" class=" text-dark">
+                                        {{ order.order_number|truncatechars:12 }}
+                                    </a>
+                                    &nbsp;Info:
+                                </p>
                             </div>                           
                         </div>
                         <div class="row">
@@ -193,10 +199,10 @@
                 </div>
             </div>
             <!--Buttons-->
-            <div class="row mt-5">
+            <div class="row mt-4">
                 <div class="col-12 text-center">
                     {% if from_profile %}
-                        <a href="{% url 'profile' %}" class="btn rounded-0 btn btn-dark my-4 btn-md">
+                        <a href="{% url 'profile' %}" class="btn rounded-0 btn btn-dark my-4 btn-md mb-5">
                             <span class="icon">
                                 <i class="fas fa-angle-left"></i>
                             </span>
