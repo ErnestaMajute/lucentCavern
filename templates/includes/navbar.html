@@ -46,11 +46,11 @@
         </div>
         <!-- My Acount Dropdown Menu -->
         <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="accountDropdown" role="button"
+            <a class="nav-link dropdown-toggle text-white nav-link-styling" href="#" id="accountDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 My Account
             </a>
-            <div class="dropdown-menu" aria-labelledby="accountDropdown">
+            <div class="dropdown-menu dropdown-styling" aria-labelledby="accountDropdown">
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
                         <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
