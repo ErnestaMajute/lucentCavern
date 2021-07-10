@@ -75,6 +75,10 @@ html {
     max-width: 386px;
 }
 
+.edit-add-form input {
+    width: 100%;
+}
+
 /* Bag page */
 /* https://www.w3schools.com/howto/howto_css_button_on_image.asp */
 
@@ -165,6 +169,11 @@ html {
         top: 6%;
         left: 10%;
     }
+
+    .toast-container {
+        max-width: 250px;
+    }
+
 }
 
 @media (min-width: 420px) and (max-width: 575.95px) {
@@ -180,6 +189,12 @@ html {
     }
 
     .container-margin {
-        margin-top: 130px;
+        margin-top: 80px;
+    }
+    
+    
+    .nav-link-styling{
+        padding-left: 15px;
+        padding-right: 0px;
     }
 }
