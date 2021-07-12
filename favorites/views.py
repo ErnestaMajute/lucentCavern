@@ -7,7 +7,7 @@ from .models import UserFavoriteslist
 from profiles.models import UserProfile
 
 
-# Functions samples from https://stackoverflow.com/questions/56580696/how-to-implement-add-to-wishlist-for-a-product-in-django
+# Functions samples from Stackoverflow (link in README.md)
 def view_favoriteslist(request):
     """ A view that renders the bag contents page """
     # Fetch the list of products that the user favorited

@@ -19,7 +19,8 @@ def subscriptions_join(request):
                 new_subscription = SubscriptionUser(email=email)
                 new_subscription.save()
                 messages.success(
-                    request, f'Thanks! {email} added to our subscription list!')
+                    request,
+                    f'Thanks! {email} added to our subscription list!')
         else:
             messages.error(request, 'Please insert a valid email address.')
 
