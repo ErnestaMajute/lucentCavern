@@ -1,59 +1,60 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# [Lucent Cavern](lucent-cavern.herokuapp.com)
 
-Welcome ErnestaMajute,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+# image
 
-## Gitpod Reminders
+This website is my final Milestone project in Code Institute. Project contains the use of  HTML, CSS, JavaScript, Django, Python, and a relational database. Website hosted on Heroku. Static and media files stored on an S3 Cloud storage from AWS. Project is connected to Stripe's payment processing platform.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Contents
+1. [UX](#ux)
+    - [User Stories](#user-stories)
+    - [Design](#design)
+    - [Wireframes](#wireframes)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+# UX
 
-Another blue button should appear to click: _Open Browser_.
+## User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### As a client I expect:
 
-A blue button should appear to click: _Make Public_,
+- A website were I can shop all products and make easy transaction.
+- A website to have optimal layout and attractive design.
+- A website to be intuitive, easy to navigate so that I would be able to find what I need as fast as possible.
+- To find information about products easily.
+- To easily sort products on a page and be able to search for a product by using search word.
+- To be able to add products to the list where later I can find them without scrolling thru all production.
+- To be able to find contact information and social media links for more info. 
+- To be able to register, login easily and take less steps as possible.
+- To be able to make a purchase with minimal amount of steps.
+- To be able to get a confirmation after purchase is made. Be provided with details on a website and confirmation email.
+- To be able to read store's Blog, have an ability to subscribe for a newsletter.
+- To be able to use website on any device: laptop, tablet or mobile phone.
+- To be informed after each request I make, like form completion, registration, login, log out and else.
+- To be able to update/change my personal information, like an address or contact number.
 
-Another blue button should appear to click: _Open Browser_.
+### As a owner I expect:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- To be able to add products, edit their details or delete them.
+- To be able to add Blog posts, edit them or delete
 
-To log into the Heroku toolbelt CLI:
+## Design
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Theme
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+I wanted to create a website that would create a feeling that you are in a lucent cavern. Main image on a home page is a base for all website's colours and backgrounds. Main goal of light colours is to provide lightweight and modern site.
 
-## Updates Since The Instructional Video
+### Colours
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Colours taken from home image, to match whole website.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+ #colours pallet image#
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Typography
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Main font family is  [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) from Google Fonts.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Wireframes
+Wireframes were created by hand. They look simple and not very detailed, a bit different from final look because they were created before I started my project. Personally for me it's easier to put everything into places when project is in progress already, details like buttons forms and other elements.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+#wireframes links#
