@@ -18,6 +18,12 @@ This website is my final Milestone project in Code Institute. Project contains t
 3. [Database](#database)
     - [Database structure](#structure)
 
+4. [Technologies](#tech)
+    - [Languages](#languages)
+    - [Libraries and Frameworks](#libraries-and-frameworks)
+    - [Databases](#databases)
+    - [Tools](#tools)
+
 # UX
 
 ## User Stories
@@ -348,3 +354,33 @@ Field Name | Field Type | Requirements
 ------------- | ------------- | -------------
 email | EmailField() | default=False, null=False, blank=False
 subscription_date | DateTimeField() | auto_now_add=True
+
+# Technologies
+
+## Languages
+
+- HTML5
+- CSS3
+- JavaScript
+- Python3
+
+## Libraries and Frameworks
+
+- Django3
+- Bootstrap (V.5)
+- jQuery
+- Font Awesome (V.5)
+- Google Fonts
+
+## Databases
+
+- SQlite3
+- PostgreSQL
+
+## Tools
+
+- Gitpod
+- Github and Git
+- Heroku
+- Stripe
+- AmazonS3
