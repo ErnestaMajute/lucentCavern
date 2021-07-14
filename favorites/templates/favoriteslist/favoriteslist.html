@@ -6,6 +6,7 @@
     <div class="overlay-products">
         <div class="container-fluid container-margin">
             <div class="row">
+                <!-- Page Header -->
                 <div class="col text-center">
                         <a class="text-dark text-decoration-none" href="">
                             <h2 class="logo-font mt-5 display-6">Favorites list</h2>
@@ -19,6 +20,7 @@
                     <div class="row">
                     {% if favoritedproducts %}
                     {% for product in favoritedproducts %}
+                    <!-- Card element for each product in a list -->
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
                             <div class="card bg-transparent h-100 border-0">
                                 {% if product.image %}
@@ -52,6 +54,7 @@
                                                     </a>
                                                 </p>
                                             {% endif %}
+                                        <!-- Icons provide ability for admmin edit or delete product -->
                                         {% if request.user.is_superuser %}
                                             <p class="text-end">
                                                 <a class="text-dark" href="{% url 'edit_product' product.id %}"><i class="fas fa-edit"></i></a> | 

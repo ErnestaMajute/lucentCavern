@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Intro content -->
     <div class="container intro-container h-100">
         <div class="row h-100">
             <div class="col-12 my-auto">
@@ -26,6 +27,7 @@
             </div>
         </div>
     </div>
+    <!-- Our Sotry content -->
     <div class="container-fluid about-container">
         <div class="row">
             <div class="col-10 mx-auto my-auto text-center">
@@ -40,6 +42,7 @@
             </div>
         </div>
     </div>
+    <!-- Favorite collections content -->
     <div class="container-fluid products-index-container h-auto">
         <div class="row h-100">
             <div class="col-10 my-5 mx-auto">
@@ -82,6 +85,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Button to view all products -->
                 <div class="text-center">
                     <h5>
                         <a class="mt-5 mb-5 btn btn-dark rounded-0 btn btn-md  text-uppercase" href="{% url 'products' %}" role="button">View All Categories</a>
@@ -90,6 +94,7 @@
             </div>
         </div>
     </div>
+    <!-- Subscription input field container -->
     <div class="container-fluid about-container">
         <div class="row">
             <div class="col-10 mx-auto my-auto text-center">
@@ -106,6 +111,7 @@
                         <input type="email" class="form-control text-center rounded-0" id="subscriptions-id"  placeholder="Your Email Address" name="subscription_email" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text small">We'll never share your email with anyone else.</div>
                     </div>
+                    <!-- Button to submit form -->
                     <button type="submit" class="mt-5 mb-5 btn btn-dark rounded-0 btn btn-md  text-uppercase">Submit</button>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </form>

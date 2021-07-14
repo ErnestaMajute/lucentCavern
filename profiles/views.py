@@ -7,7 +7,7 @@ from .forms import UserProfileForm
 from checkout.models import Order
 
 
-# Function from BoutiqueAdo mini project
+# Functions from BoutiqueAdo mini project
 @login_required
 def profile(request):
     """ Display the user's profile. """

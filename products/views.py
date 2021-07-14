@@ -62,6 +62,7 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 
+# Function's base from BoutiqueAdo mini project
 def product_detail(request, product_id):
     """ A view to show individual product details """
 
@@ -71,6 +72,7 @@ def product_detail(request, product_id):
         user = UserProfile.objects.get(user=request.user)
         favoriteslist = Product.objects.filter(
             userfavoriteslists__user_profile=user)
+        # Checks is product in user's Favorites list
         if product in favoriteslist:
             in_favoriteslist = True
 
@@ -82,6 +84,7 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
+# Function's base from BoutiqueAdo mini project
 @login_required
 def add_product(request):
     """ Add a product to the store """
@@ -110,6 +113,7 @@ def add_product(request):
     return render(request, template, context)
 
 
+# Function's base from BoutiqueAdo mini project
 @login_required
 def edit_product(request, product_id):
     """ Edit a product in the store """
@@ -141,6 +145,7 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
+# Function's base from BoutiqueAdo mini project
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """

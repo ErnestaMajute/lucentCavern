@@ -58,6 +58,7 @@ def modify_bag(request, item_id):
     return redirect(reverse('view_bag'))
 
 
+# Function from BoutiqueAdo mini project
 def delete_from_bag(request, item_id):
     """Delete the item from the shopping bag"""
 

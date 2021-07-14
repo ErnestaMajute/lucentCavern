@@ -17,6 +17,7 @@ import stripe
 import json
 
 
+# Function from BoutiqueAdo mini project
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -34,6 +35,7 @@ def cache_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
+# Function from BoutiqueAdo mini project
 def checkout(request):
     """
     A view to return the checkout page.
@@ -148,6 +150,7 @@ def checkout(request):
     return render(request, template, context)
 
 
+# Function from BoutiqueAdo mini project
 def checkout_success(request, order_number):
     """
     Handle successful checkouts
