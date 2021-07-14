@@ -27,6 +27,11 @@ This website is my final Milestone project in Code Institute. Project contains t
 - [Deployment](#deployment)
 	- [Local Deployment](#local-deployment)
     - [To Heroku](#to-heroku)
+
+7. [Credits](#credits)
+    - [Media](#media)
+    - [Content](#content)
+    - [Acknowledgements](#acknowledgements)
     
 
 # UX
@@ -448,3 +453,31 @@ STRIPE_WH_SECRET | <STRIPE_WH_SECRET>
 USE_AWS | True
 
 9. On Heroku in a Deploy page, choose **Connect Github** and **Enable Automatic Deployment** and new commits will be automaticly deployed to your neew Heroku application.
+
+# Credits
+
+### Media
+
+- Images and background used for this project were found on:
+	-  [Pexels](https://www.pexels.com)
+	- [PxHere](https://pxhere.com/)
+	- [Unsplash](https://unsplash.com/)
+	- [Pixabay](https://pixabay.com/)
+	- Responsive Image from [Am I Responsive?](http://ami.responsivedesign.is/)
+	- Image with colour palette from [Coolors](https://coolors.co/image-picker)
+
+### Content
+
+Project developed by following Boutique Ado(Code Institute) mini project lessons. I added comments to pieces which were taken and modified to fit my project functionality. Apps like: Shopping Bag, Checkout, Products, Profiles.
+
+
+- Blog App was created with help from [Django central](https://djangocentral.com/building-a-blog-application-with-django/).
+- [Button on Image Idea](https://www.w3schools.com/howto/howto_css_button_on_image.asp)
+- [Ideas for Favorites](https://stackoverflow.com/questions/61561263/django-wishlist-feature-implementing)
+- Ideas for Newsletter Subscription found on Slack
+- [Style guide for Python Code](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
+
+### Acknowledgements
+I want to say huge thanks to my mentor Reuben Ferrante, who guided me through all Code Institute Course. Thankful for his patience, professionalism and good words which motivated me in past months.
+As well thanks to Code Institute Tutors who helped me to deal with all issues. And somehow taught me - to ask for help when I need it. Before, I had issues with that :)
+Thanks to all Code Institute's team for skills, knowledge, support, motivation and a chance to be a student again.
