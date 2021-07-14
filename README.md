@@ -6,23 +6,28 @@
 This website is my final Milestone project in Code Institute. Project contains the use of  HTML, CSS, JavaScript, Django, Python, and a relational database. Website hosted on Heroku. Static and media files stored on an S3 Cloud storage from AWS. Project is connected to Stripe's payment processing platform.
 
 ## Contents
-1. [UX](#ux)
+- [UX](#ux)
     - [User Stories](#user-stories)
     - [Design](#design)
     - [Wireframes](#wireframes)
 
-2. [Features](#features)
+- [Features](#features)
     - [Current Features](#current-features)
     - [Future Features](#future-features)
 
-3. [Database](#database)
+- [Database](#database)
     - [Database structure](#structure)
 
-4. [Technologies](#tech)
+- [Technologies](#technologies)
     - [Languages](#languages)
     - [Libraries and Frameworks](#libraries-and-frameworks)
     - [Databases](#databases)
     - [Tools](#tools)
+
+- [Deployment](#deployment)
+	- [Local Deployment](#local-deployment)
+    - [To Heroku](#to-heroku)
+    
 
 # UX
 
@@ -384,3 +389,62 @@ subscription_date | DateTimeField() | auto_now_add=True
 - Heroku
 - Stripe
 - AmazonS3
+
+# Deployment
+
+## Local Deployment
+
+1.  Log in to your  Gitpod account 
+2.  Clone this project repository from GitHub
+    -   Go to my [LuucentCavern repository](https://github.com/ErnestaMajute/lucentCavern) 
+ 3. Add Gitpod browser extension for Chrome:
+    -   Go to  [GitPod Chrome Browser Extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki)
+  4.  If you  installed the extension you should view a green Gitpod button on the top right corner of page. Next to Clone or Download button. 
+  5. When clicked this button will allow you to open this repository directly in Gitpod.
+6.  The following environment variables needs to be set:
+
+KEY | VALUE
+------------- | ------------- | 
+DATABASE_URL | <DATABASE_URL>
+AWS_ACCESS_KEY_ID | <AWS_ACCESS_KEY_ID>
+AWS_SECRET_ACCESS_KEY | <AWS_SECRET_ACCESS_KEY>
+EMAIL_HOST_PASSWORD | <EMAIL_HOST_PASSWORD>
+EMAIL_HOST_USER | <EMAIL_HOST_USER>
+SECRET_KEY | <SECRET_KEY>
+STRIPE_PUBLIC_KEY | <STRIPE_PUBLIC_KEY>
+STRIPE_SECRET_KEY | <STRIPE_SECRET_KEY>
+STRIPE_WH_SECRET | <STRIPE_WH_SECRET>
+USE_AWS | True
+
+7.  Download all the dependencies to run this project and listed in the  **requirements.txt**  by running command **pip3 install -r requirement.txt**.
+8.  Create a local development server. In the workspace run the following command  **python3 manage.py runserver** . Now you should have a Gitpod link to the deployed app.
+
+
+
+##  To Heroku
+
+This [LucentCavern](https://lucent-cavern.herokuapp.com/) app was deployed through Heroku using the master branch of my GitHub [LuucentCavern repository](https://github.com/ErnestaMajute/lucentCavern). Link To Deplyed app also can be foud on a very top of page.
+
+
+1. Install **gunicorn** to run the application on Heroku by running command **sudo pip3 install gunicorn**
+2. Install **pycopg2** to connect to PostgreSQL by running command  **sudo pip3 install psycopg2**
+3. Create a **requirements.txt** file by running command **sudo pip3 freeze --local > requirements.txt**
+4. Create a new Heroku application by clicking **New** after **Create New App**. Give a name to your app and click **Create app**
+5. Install PostgreSQL add-on by running command **heroku addons:create heroku-postgresql:hobby-dev**
+6. Create a Procfile by running command **echo web: gunicorn lucent-cavern.wsgi:application > Procfile**
+7. Following config variables needs to be set:
+
+KEY | VALUE
+------------- | ------------- | 
+DATABASE_URL | <DATABASE_URL>
+AWS_ACCESS_KEY_ID | <AWS_ACCESS_KEY_ID>
+AWS_SECRET_ACCESS_KEY | <AWS_SECRET_ACCESS_KEY>
+EMAIL_HOST_PASSWORD | <EMAIL_HOST_PASSWORD>
+EMAIL_HOST_USER | <EMAIL_HOST_USER>
+SECRET_KEY | <SECRET_KEY>
+STRIPE_PUBLIC_KEY | <STRIPE_PUBLIC_KEY>
+STRIPE_SECRET_KEY | <STRIPE_SECRET_KEY>
+STRIPE_WH_SECRET | <STRIPE_WH_SECRET>
+USE_AWS | True
+
+9. On Heroku in a Deploy page, choose **Connect Github** and **Enable Automatic Deployment** and new commits will be automaticly deployed to your neew Heroku application.
