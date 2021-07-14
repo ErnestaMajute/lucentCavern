@@ -1,7 +1,7 @@
 # [Lucent Cavern](lucent-cavern.herokuapp.com)
 
 
-# image
+![Responsive Image](README-media/responsive-image.png)
 
 This website is my final Milestone project in Code Institute. Project contains the use of  HTML, CSS, JavaScript, Django, Python, and a relational database. Website hosted on Heroku. Static and media files stored on an S3 Cloud storage from AWS. Project is connected to Stripe's payment processing platform.
 
@@ -65,7 +65,7 @@ I wanted to create a website that would create a feeling that you are in a lucen
 
 Colours taken from home image, to match whole website.
 
- #colours pallet image#
+![Colours](README-media/sites-colours.png)
 
 ### Typography
 
@@ -83,7 +83,7 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
  ### Shared features:
  
  - Fixed Navbar:
-	 - Brand  name
+	 - Brand name
 	 - Home
 	 - Products (links to categories)
 	 - Blog
