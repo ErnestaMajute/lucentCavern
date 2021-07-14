@@ -15,6 +15,8 @@ This website is my final Milestone project in Code Institute. Project contains t
     - [Current Features](#current-features)
     - [Future Features](#future-features)
 
+3. [Database](#database)
+    - [Database structure](#structure)
 
 # UX
 
@@ -251,3 +253,98 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 
 - Provide ability for user to leave a feedback for product, rate it.
 - Provide ability for user login with social media account.
+
+# Database
+
+- For Development I used SQlite3 database which provided by Django. After deployment to Heroku database was switched to PostgreSQL.
+
+## Structure
+
+### Category model
+
+Field Name | Field Type | Requirements
+------------- | ------------- | -------------
+name | CharField() | max_length=254
+friendly_name | CharField() | max_length=254, null=True, blank=True
+
+### Product model
+
+Field Name | Field Type | Requirements
+------------- | ------------- | -------------
+category | ForeignKey() | 'Category', null=True, blank=True, on_delete=models.SET_NULL
+sku | CharField() | max_length=254, null=True, blank=True
+name | CharField() | max_length=254, 
+description | TextField() | 
+price | DecimalField() | max_digits=6, decimal_places=2
+image_url | URLField() | max_length=1024, null=True, blank=True
+image | ImageField() | null=True, blank=True
+
+### BlogPost model
+
+Field Name | Field Type | Requirements
+------------- | ------------- | -------------
+author | ForeignKey() | UserProfile, on_delete=models.CASCADE, related_name='blog_posts', null=False, blank=Trueblank=True, on_delete=models.SET_NULL
+title | CharField() | max_length=120, null=True, blank=False 
+subtitle | CharField() | max_length=180, null=True, blank=False 
+content | TextField() |  
+slug | SlugField() | unique=True, max_length=250, default=None
+created_on | DateTimeField() | auto_now_add=True, null=False
+updated_on | DateTimeField() | auto_now=True, null=False
+
+### Order model
+
+Field Name | Field Type | Requirements
+------------- | ------------- | -------------
+order_number | CharField() | max_length=32, null=False, editable=False
+user_profile | ForeignKey() | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' 
+full_name | CharField() | max_length=50, null=False, blank=False
+email | EmailField() | max_length=254, null=False, blank=False
+phone_number | CharField() | max_length=20, null=False, blank=False
+country | CountryField() | blank_label='Country *', null=False, blank=False 
+postcode | CharField() | max_length=20, null=True, blank=True
+town_or_city | CharField() | max_length=40, null=False, blank=False 
+street_address1 | CharField() | max_length=80, null=False, blank=False
+street_address2 | CharField() | max_length=80, null=True, blank=True
+county | CharField() | max_length=80, null=True, blank=True 
+date | DateTimeField() | auto_now_add=True 
+delivery_cost | DecimalField() | max_digits=6, decimal_places=2, null=False, default=0
+order_total | DecimalField() | max_digits=10, decimal_places=2, null=False, default=0 
+grand_total | DecimalField() | max_digits=10, decimal_places=2, null=False, default=0
+original_bag | TextField() | null=False, blank=False, default=''
+stripe_pid | CharField() | max_length=254, null=False, blank=False, default=''
+
+### OrderLineItem model
+
+Field Name | Field Type | Requirements
+------------- | ------------- | -------------
+order | ForeignKey() | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
+product | ForeignKey() | Product, null=False, blank=False, on_delete=models.CASCADE
+quantity | IntegerField() | null=False, blank=False, default=0
+lineitem_total | DecimalField() | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
+
+### UserFavoritesList model
+
+Field Name | Field Type | Requirements
+------------- | ------------- | -------------
+user_profile | OneToOneField() | UserProfile, on_delete=models.CASCADE, null=False, blank=False
+favorited_products | ManyToManyField() | Product, related_name='userfavoriteslists'
+
+### UserProfile model
+
+Field Name | Field Type | Requirements
+------------- | ------------- | -------------
+user  | OneToOneField()  |  User, on_delete=models.CASCADE
+default_phone_number  |  CharField()  |  max_length=20, null=True, blank=True
+default_street_address1  | CharField() |  max_length=80, null=True, blank=True
+default_street_address2  |  CharField()  |  max_length=80, null=True, blank=True
+default_town_or_city | CharField() | max_length=40, null=True, blank=True
+default_county | CharField() | max_length=80, null=True, blank=True
+default_postcode |  CharField() | max_length=20, null=True, blank=True
+default_country | CountryField()  |  blank_label='Country', null=True, blank=True
+
+### SubscriptionUser model
+
+Field Name | Field Type | Requirements
+------------- | ------------- | -------------
+email | EmailField() | default=False, null=False, blank=False
+subscription_date | DateTimeField() | auto_now_add=True
