@@ -1,7 +1,7 @@
 body {
     background: url('/media/crystals-index.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 100%;
     color: #ffffff;
     font-family: 'Playfair Display', serif;
 }
