@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- 500 Content -->
+{% block content %}
+<div class="overlay-product">
+    <div class="container container-margin mb-2">
+        <div class="row text-center text-dark">
+            <div class="col">
+                <h1 class="lead mb-5">500 Internal Server Error</h1>
+                <p>Sorry, the server ancountered an internal error and was unable to complete your request.</p>
+                <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 btn btn-dark btn-lg">
+                    <span class="icon">
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                    </span>
+                    <span class="text-uppercase">Home</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
