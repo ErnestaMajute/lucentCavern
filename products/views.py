@@ -73,8 +73,7 @@ def product_detail(request, product_id):
         favoriteslist = Product.objects.filter(
             userfavoriteslists__user_profile=user)
         # Checks is product in user's Favorites list
-        if product in favoriteslist:
-            in_favoriteslist = True
+        in_favoriteslist = product in favoriteslist
 
     context = {
         'product': product,
