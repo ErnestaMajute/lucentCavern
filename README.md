@@ -16,6 +16,7 @@ This website is my final Milestone project in Code Institute. Project contains t
     - [Future Features](#future-features)
 
 - [Database](#database)
+	- [Database Schema](#database-schema)
     - [Database structure](#structure)
 
 - [Technologies](#technologies)
@@ -110,6 +111,31 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 
 ### Individual features:
 
+- My Favorites page (registered users only) contains:
+
+	- Header Favorites list
+	- Card element for each item in a Favorites list:
+		- Product Image, name, price, category, edit/delete product icon buttons (admin only)
+
+- Blog page contains:
+
+	- Our Blog header
+	- Blog posts list with cards:
+		- Post title
+		- Author, date
+		- Content
+		- Read more button which links to individual post details
+
+- Blog post details page contains:
+
+	- Post title
+	- Subtitle
+	- Author
+	- Date when published
+	- Blog post content
+	- Back button which links user to Blog page 
+
+
 - Home page contains:
 
 	- Announcement section describing  website's content, button to link user to All Products page
@@ -148,31 +174,16 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 	- Update Product button to update product details and save them
 
 - Add Product page (admin only) contains:
-- Header for Product Management
+
+	- Header for Product Management
 	- Header for Edit Product
 	- Form for:
 		- Category options, Sku, Product name, description, price, Image URL, Choose File button to upload image
 	- Cancel button to cancel Product Add
 	- Add Product button to add product to DB
 
-- Blog page contains:
-
-	- Our Blog header
-	- Blog posts list with cards:
-		- Post title
-		- Author, date
-		- Content
-		- Read more button which links to individual post details
-
-- Blog post details page contains:
-	- Post title
-	- Subtitle
-	- Author
-	- Date when published
-	- Blog post content
-	- Back button which links user to Blog page 
-
 - Register page contains:
+
 	- Header
 	- Paragraph with link to login page
 	- Form to input email, username, password
@@ -180,6 +191,7 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 	- Button Back to Login which links to login page
 	
 - Login page contains:
+
 	- Header
 	- Paragraph with link to Register page
 	- Form to input username, password
@@ -252,11 +264,6 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 		- Phone Number, Address
 	- Update Information button to update form with new details
 
-- My Favorites page (registered users only) contains:
-
-	- Header Favorites list
-	- Card element for each item in a Favorites list:
-		- Product Image, name, price, category, edit/delete product icon buttons (admin only)
 
 - Log Out page (registered users only) contains:
 
@@ -273,6 +280,9 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 # Database
 
 - For Development I used SQlite3 database which provided by Django. After deployment to Heroku database was switched to PostgreSQL.
+
+## Database Schema
+![Database Schema](README-media/db-schema.png)
 
 ## Structure
 
