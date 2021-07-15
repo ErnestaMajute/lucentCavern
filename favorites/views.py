@@ -11,14 +11,16 @@ from profiles.models import UserProfile
 def view_favoriteslist(request):
     """ A view that renders the bag contents page """
     # Fetch the list of products that the user favorited
-    user_favourites = UserFavoriteslist.objects.get(
-        user_profile=request.user.userprofile)
-    products = Product.objects.filter(
-        id__in=[val.id for val in user_favourites.favorited_products.all()])
+    user_favourites = UserFavoriteslist.objects.filter(
+        user_profile=request.user.userprofile).first()
+    if user_favourites:
+        products = Product.objects.filter(
+            id__in=[val.id for val in user_favourites.favorited_products.all()])
+    else:
+        products = []
     context = {
         'favoritedproducts': products,
     }
-
     return render(request, 'favoriteslist/favoriteslist.html', context)
 
 
