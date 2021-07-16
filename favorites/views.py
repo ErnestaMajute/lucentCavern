@@ -15,7 +15,8 @@ def view_favoriteslist(request):
         user_profile=request.user.userprofile).first()
     if user_favourites:
         products = Product.objects.filter(
-            id__in=[val.id for val in user_favourites.favorited_products.all()])
+            id__in=[
+                val.id for val in user_favourites.favorited_products.all()])
     else:
         products = []
     context = {
