@@ -29,7 +29,7 @@ This website is my final Milestone project in Code Institute. Project contains t
 	- [Local Deployment](#local-deployment)
     - [To Heroku](#to-heroku)
 
-7. [Credits](#credits)
+- [Credits](#credits)
     - [Media](#media)
     - [Content](#content)
     - [Acknowledgements](#acknowledgements)
@@ -84,7 +84,13 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 
 # Features
 
-## Current Features
+<a id="current-features"></a>
+<details>
+<summary>
+<h2 style="display:inline-block">
+Current Features
+<h2>
+</summary>
 
  ### Shared features:
  
@@ -271,11 +277,19 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 	- Question Paragraph
 	- Cancel button
 	- Sign Out button to confirm action
+</details>
 
-## Future Features:
+<a id="future-features"></a>
+<details>
+<summary>
+<h2 style="display:inline-block">
+Future Features
+<h2>
+</summary>
 
 - Provide ability for user to leave a feedback for product, rate it.
 - Provide ability for user login with social media account.
+</details>
 
 # Database
 
@@ -284,7 +298,13 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 ## Database Schema
 ![Database Schema](README-media/db-schema.png)
 
-## Structure
+<a id="structure"></a>
+<details>
+<summary>
+<h2 style="display:inline-block">
+Structure
+<h2>
+</summary>
 
 ### Category model
 
@@ -374,6 +394,7 @@ Field Name | Field Type | Requirements
 ------------- | ------------- | -------------
 email | EmailField() | default=False, null=False, blank=False
 subscription_date | DateTimeField() | auto_now_add=True
+</details>
 
 # Technologies
 
@@ -407,7 +428,13 @@ subscription_date | DateTimeField() | auto_now_add=True
 
 # Deployment
 
-## Local Deployment
+<a id="local-deployment"></a>
+<details>
+<summary>
+<h2 style="display:inline-block">
+Local Deployment
+<h2>
+</summary>
 
 1.  Log in to your  Gitpod account 
 2.  Clone this project repository from GitHub
@@ -433,10 +460,15 @@ USE_AWS | True
 
 7.  Download all the dependencies to run this project and listed in the  **requirements.txt**  by running command **pip3 install -r requirement.txt**.
 8.  Create a local development server. In the workspace run the following command  **python3 manage.py runserver** . Now you should have a Gitpod link to the deployed app.
+</details>
 
-
-
-##  To Heroku
+<a id="to-heroku"></a>
+<details>
+<summary>
+<h2 style="display:inline-block">
+To Heroku
+<h2>
+</summary>
 
 This [LucentCavern](https://lucent-cavern.herokuapp.com/) app was deployed through Heroku using the master branch of my GitHub [LuucentCavern repository](https://github.com/ErnestaMajute/lucentCavern). Link To Deplyed app also can be foud on a very top of page.
 
@@ -462,7 +494,8 @@ STRIPE_SECRET_KEY | <STRIPE_SECRET_KEY>
 STRIPE_WH_SECRET | <STRIPE_WH_SECRET>
 USE_AWS | True
 
-9. On Heroku in a Deploy page, choose **Connect Github** and **Enable Automatic Deployment** and new commits will be automaticly deployed to your neew Heroku application.
+8. On Heroku in a Deploy page, choose **Connect Github** and **Enable Automatic Deployment** and new commits will be automaticly deployed to your neew Heroku application.
+</details>
 
 # Credits
 
