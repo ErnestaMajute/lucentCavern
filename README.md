@@ -519,6 +519,8 @@ Project developed by following Boutique Ado(Code Institute) mini project lessons
 - [Ideas for Favorites](https://stackoverflow.com/questions/61561263/django-wishlist-feature-implementing)
 - Ideas for Newsletter Subscription found on Slack
 - [Style guide for Python Code](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
+- [README dropdown header styling](https://stackoverflow.com/questions/47392245/show-dropdown-area-expandable-area-with-code-in-markdown-file)
+- [README dropdown](https://gist.github.com/citrusui/07978f14b11adada364ff901e27c7f61#file-dropdown-md)
 
 ### Acknowledgements
 I want to say huge thanks to my mentor Reuben Ferrante, who guided me through all Code Institute Course. Thankful for his patience, professionalism and good words which motivated me in past months.
