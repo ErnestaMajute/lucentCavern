@@ -87,14 +87,12 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 
 # Features
 
-<a id="current-features"></a>
+## Current Features
 
 <details>
-<summary markdown="span">
-<h2 style="display:inline-block">
-	Current Features
-</h2>
-</summary>
+	<summary>
+		Expand
+	</summary>
 
  ### Shared features:
  
@@ -283,12 +281,10 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 	- Sign Out button to confirm action
 </details>
 
-<a id="future-features"></a>
+## Future Features 
 <details>
 <summary>
-<h2 style="display:inline-block">
-Future Features
-<h2>
+	Expand
 </summary>
 
 - Provide ability for user to leave a feedback for product, rate it.
@@ -302,12 +298,11 @@ Future Features
 ## Database Schema
 ![Database Schema](README-media/db-schema.png)
 
-<a id="structure"></a>
+## Structure
+
 <details>
 <summary>
-<h2 style="display:inline-block">
-Structure
-<h2>
+	Expand
 </summary>
 
 ### Category model
@@ -402,12 +397,11 @@ subscription_date | DateTimeField() | auto_now_add=True
 
 # Testing
 
-<a id="validation"></a>
+## Validation
+
 <details>
 <summary>
-<h2 style="display:inline-block">
-Validation
-<h2>
+	Expand
 </summary>
 
 ### Results
@@ -454,12 +448,11 @@ Validator | Result
 
 # Deployment
 
-<a id="local-deployment"></a>
+## Local Deployment
+
 <details>
 <summary>
-<h2 style="display:inline-block">
-Local Deployment
-<h2>
+	Expand
 </summary>
 
 1.  Log in to your  Gitpod account 
@@ -488,12 +481,10 @@ USE_AWS | True
 8.  Create a local development server. In the workspace run the following command  **python3 manage.py runserver** . Now you should have a Gitpod link to the deployed app.
 </details>
 
-<a id="to-heroku"></a>
+## To Heroku
 <details>
 <summary>
-<h2 style="display:inline-block">
-To Heroku
-<h2>
+	Expand
 </summary>
 
 This [LucentCavern](https://lucent-cavern.herokuapp.com/) app was deployed through Heroku using the master branch of my GitHub [LuucentCavern repository](https://github.com/ErnestaMajute/lucentCavern). Link To Deplyed app also can be foud on a very top of page.
