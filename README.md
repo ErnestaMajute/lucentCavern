@@ -19,6 +19,9 @@ This website is my final Milestone project in Code Institute. Project contains t
 	- [Database Schema](#database-schema)
     - [Database structure](#structure)
 
+- [Testing](#testing)
+	- [Validation](#validation)
+
 - [Technologies](#technologies)
     - [Languages](#languages)
     - [Libraries and Frameworks](#libraries-and-frameworks)
@@ -394,6 +397,28 @@ Field Name | Field Type | Requirements
 ------------- | ------------- | -------------
 email | EmailField() | default=False, null=False, blank=False
 subscription_date | DateTimeField() | auto_now_add=True
+</details>
+
+# Testing
+
+<a id="validation"></a>
+<details>
+<summary>
+<h2 style="display:inline-block">
+Validation
+<h2>
+</summary>
+
+### Results
+
+Validator | Result 
+------------- | ------------- 
+[W3C validator HTML](https://validator.w3.org/) | :heavy_check_mark: 
+[W3C validator JIGSAW CSS](https://jigsaw.w3.org/css-validator/) | :heavy_check_mark: (by direct CSS input)
+[JSHint validator](https://jshint.com/) | :heavy_check_mark:
+[PEP8 validator](http://pep8online.com/) | :heavy_check_mark:
+
+
 </details>
 
 # Technologies
