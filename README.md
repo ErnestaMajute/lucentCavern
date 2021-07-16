@@ -89,9 +89,9 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 
 <a id="current-features"></a>
 <details>
-<summary>
-<h2 style="display:inline-block">
-Current Features
+<summary style="display:inline-block">
+<h2>
+:small_red_triangle_down: Current Features
 <h2>
 </summary>
 
