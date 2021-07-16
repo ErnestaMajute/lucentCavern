@@ -91,7 +91,7 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 
 <details>
 	<summary>
-		Expand
+		:open_book:
 	</summary>
 
  ### Shared features:
@@ -282,9 +282,10 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 </details>
 
 ## Future Features 
+
 <details>
 <summary>
-	Expand
+	:open_book:
 </summary>
 
 - Provide ability for user to leave a feedback for product, rate it.
@@ -302,7 +303,7 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 
 <details>
 <summary>
-	Expand
+	:open_book:
 </summary>
 
 ### Category model
@@ -401,7 +402,7 @@ subscription_date | DateTimeField() | auto_now_add=True
 
 <details>
 <summary>
-	Expand
+	:open_book:
 </summary>
 
 ### Results
@@ -412,7 +413,43 @@ Validator | Result
 [W3C validator JIGSAW CSS](https://jigsaw.w3.org/css-validator/) | :heavy_check_mark: (by direct CSS input)
 [JSHint validator](https://jshint.com/) | :heavy_check_mark:
 [PEP8 validator](http://pep8online.com/) | :heavy_check_mark:
+</details>
 
+## Browsers
+
+<details>
+<summary>
+	:open_book:
+</summary>
+
+Website tested on Google Chrome, Microsoft Edge, Opera, Safari and Firefox browsers.
+</details>
+
+## Design responsiveness
+
+<details>
+<summary>
+	:open_book:
+</summary>
+
+##
+
+Website's design responsiveness tested on all devices provided by using Chrome Developer Tools with no issues. Designed to suit even smallest devices like Galaxy Fold. Examples of devices:
+
+Screen resolutions | Devices 
+------------- | ------------- 
+1600x992px | Desktop
+1280x802px | Laptop
+768x1024px | Tablet
+320X568PX | iPhone 5/SE
+375x667px | iPhone 6,7,8
+414x736px | iPhone 6,7,8 Plus
+375x812px | iPhone X
+360x640px | Galaxy S5
+1024x1366px | iPad Pro
+384x640px | Nexus 4
+1080x2244px | Huawei Mate 20X(5G)
+280x653px | Galaxy Fold
 
 </details>
 
@@ -452,7 +489,7 @@ Validator | Result
 
 <details>
 <summary>
-	Expand
+	:open_book:
 </summary>
 
 1.  Log in to your  Gitpod account 
@@ -484,7 +521,7 @@ USE_AWS | True
 ## To Heroku
 <details>
 <summary>
-	Expand
+	:open_book:
 </summary>
 
 This [LucentCavern](https://lucent-cavern.herokuapp.com/) app was deployed through Heroku using the master branch of my GitHub [LuucentCavern repository](https://github.com/ErnestaMajute/lucentCavern). Link To Deplyed app also can be foud on a very top of page.
