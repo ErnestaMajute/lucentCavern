@@ -492,7 +492,7 @@ Footer
 	+ :heavy_check_mark: Mobile/tablet view: Each footer card takes full column (12), and individual row.
 	+ :heavy_check_mark: Address card content aligned to center, Map Icon provided (only on mobile/tablet view).
 </details>
-
+</details>
 
 # Technologies
 
