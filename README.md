@@ -21,6 +21,9 @@ This website is my final Milestone project in Code Institute. Project contains t
 
 - [Testing](#testing)
 	- [Validation](#validation)
+	- [Browsers](#browsers)
+	- [Design responsiveness](#design-responsiveness)
+	- [Manual Testing](#manual-testing)
 
 - [Technologies](#technologies)
     - [Languages](#languages)
@@ -432,8 +435,6 @@ Website tested on Google Chrome, Microsoft Edge, Opera, Safari and Firefox brows
 	:open_book:
 </summary>
 
-##
-
 Website's design responsiveness tested on all devices provided by using Chrome Developer Tools with no issues. Designed to suit even smallest devices like Galaxy Fold. Examples of devices:
 
 Screen resolutions | Devices 
@@ -452,6 +453,46 @@ Screen resolutions | Devices
 280x653px | Galaxy Fold
 
 </details>
+
+## Manual Testing
+
+<details>
+<summary>
+	:open_book:
+</summary>
+
+<details>
+<summary>
+Navigation Bar
+</summary>
+			
++ Tests:
+	+ :heavy_check_mark: Brand name, Home, Products, Blog, Contact, Seach Bar, My Account, Cart Icon displayed and aligned correctly.
+	+ :heavy_check_mark: Home, Blog, Contact, Cart Icon items links to assigned pages or Home page sections like Contact Us section in a footer.
+	+ :heavy_check_mark: Products Navbar item provides dropdown list with seven categories. Each list item links to assigned page.
+	+ :heavy_check_mark: Search bar form submited without input, specifies that an input field must be filled out before submitting the form.
+	+ :heavy_check_mark: Search bar form submited with input, links to products page with search results.
+	+ :heavy_check_mark: (Loged in) My Account Navbar item provides dropdown list with links to Product Managment(admin only), My Profile, My Favorites, Log Out pages. Each list item links to assigned page.
+	+ :heavy_check_mark: (Non registered) My Account Navbar item provides dropdown list with links to Register, Login pages. Both list items links to assigned page.
+	+ :heavy_check_mark: Mobile/tablet website view: Navbar provides navbar toogler with dropdown, My Account dropdown and Cart icon link. All tests above done for mobile/tablet view, dropdowns provide list items with assigned links to correct pages.
+</details>
+
+<details>
+<summary>
+Footer
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Footer provides Address, Contact Us, Social Media Links cards which aligned as assigned. On the bottom of footer Copyright content displayed.
+	+ :heavy_check_mark: Address Card content aligned to the right on big devices, no icon.
+	+ :heavy_check_mark: Contact Us email mailto anchor opens user's device's default mail program.
+	+ :heavy_check_mark: Contact Us phone number tel anchor provides call link to place a phone call.
+	+ :heavy_check_mark: Follow Us card provides links to Social Media, all four links works. Opens links in a new tab (No Social Media account were created).
+	+ :heavy_check_mark: All link tests above done for mobile/tablet view.
+	+ :heavy_check_mark: Mobile/tablet view: Each footer card takes full column (12), and individual row.
+	+ :heavy_check_mark: Address card content aligned to center, Map Icon provided (only on mobile/tablet view).
+</details>
+
 
 # Technologies
 
