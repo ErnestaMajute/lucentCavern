@@ -619,6 +619,59 @@ Shopping Bag page
 	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices as well.
 </details>
 
+<details>
+<summary>
+Checkout page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Page Header
+	+ :heavy_check_mark: Personal Details form:
+		+ If user tries to complete order without filling input fields, form provides message informing that fields need to filled.
+	+ :heavy_check_mark: Delivery Details form:
+		+ If user tries to complete order without filling input fields, form provides message informing that fields need to filled. Required fields: Phone Number, Street Address 1, Town or City, Contry.
+	+ :heavy_check_mark: (Non registered users) Bellow the form, paragraph with links to Create an account or login to save both forms information. Both links sends to asigned pages. Register or Login.
+	+ :heavy_check_mark: (Loged in users) Bellow the form, checkbox with statment informing about opportunity to save delivery information to user's profile if checkbox checked.
+	+ :heavy_check_mark: Stripe Payment element provided.
+	+ :heavy_check_mark: Input field submited with **Payment succeeds** testing number: (4242 4242 4242 4242). Sends user to Checkout Success page, sends a Confirmation email with order details, Stripe/Payments confirms that payment is completed.
+	+ :heavy_check_mark: Input field submited with **Payment requires authentication** testing number: (4000 0025 0000 3155). Opens modal, if chosen COMPLETE AUTHENTICATION, sends user to Checkout Success page, sends a Confirmation email with order details, Stripe/Payments confirms that payment is completed. If chosen FAIL AUTHENTICATION, under playment element, paragraph with message apears, informing that unable to authenticate payment method, choose different method and try again.
+	+ :heavy_check_mark: Input field submited with **Payment is declined** testing number: (4000 0000 0000 9995). Provides paragraph with message that card has insufficient funds.
+	+ :heavy_check_mark: If field filled with random numbers, message informs that card number is invalid.
+	+ :heavy_check_mark: If user tries to submit form with incomplete card number field or empty, paragraph message informs about card number being incomplete.
+	+ :heavy_check_mark: **CHANGE BAG** button  links to Shopping Bag page
+	+ :heavy_check_mark: **COMPLETE ORDER** button links to (if transaction successfull) Checkout Success page
+	+ :heavy_check_mark: On the right side of the page order details provided
+	+ :heavy_check_mark: Order list (quantity)
+	+ :heavy_check_mark: Row With Item and Subtotal
+	+ :heavy_check_mark: Row with Product image, name and quantity, right ammount subtotal
+	+ :heavy_check_mark: Total provides right ammount
+	+ :heavy_check_mark: Delivery provides counted right ammount
+	+ :heavy_check_mark: Grand Total counted and displayed
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices as well.
+</details>
+	
+<details>
+<summary>
+Checkout Success page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: page header, aligned to the left
+	+ :heavy_check_mark: paragraph with information and email where order details were sent.
+	+ :heavy_check_mark: Toast with success message, triggered by successful transaction informs that order processed, provides order number and email where confirmation email will be sent to.
+	+ :heavy_check_mark: Confirmation container with details:
+		+ Aligned to the left: 
+			+ Order id info
+			+ Order details: date, items
+			+ Delivering to: Full name, Address 1, Address 2, County, Town or City, Postal Code, Country, Phone Number
+			+ Billing info: Total, Delivery, Grand Total
+		+ Aligned to the right:
+			+ Date, time, items name, quantity, price for each. Users delivery details, billing total, delivery grand total with right ammounts
+	+ :heavy_check_mark: **TAKE A LOOK AT OUR OTHER PRODUCTS** button links user to Product page
+	+ :heavy_check_mark: **BACK TO PROFILE** button provided only if user came from Profile (loged in user) page, button links back to Profile page
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices as well.
+</details>
+
 </details>
 
 # Technologies
