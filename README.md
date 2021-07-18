@@ -461,6 +461,8 @@ Screen resolutions | Devices
 	:open_book:
 </summary>
 
+:heavy_check_mark: - PASS | :x: - FAIL
+
 <details>
 <summary>
 Navigation Bar
