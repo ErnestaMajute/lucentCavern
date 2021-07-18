@@ -802,6 +802,47 @@ Login/Sign In page
 	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
 </details>
 
+<details>
+<summary>
+Password Reset page
+</summary>
+	
++ Tests:
+	+ :heavy_check_mark: Page header
+	+ :heavy_check_mark: Paragraph with instructions
+	+ :heavy_check_mark: Contains form with:
+		+ Input field for email address
+		+ **Back to Login** button links user back to Login page
+		+ **Reset My Password** button submits form and links to Password Reset done page where information provided, sends a leter to user iwth Passsword reset link.
+	+ :heavy_check_mark: If user tries to submit form with empty input field, form provides message informing that fields need to filled.
+	+ :heavy_check_mark: If user fills in not registered email address, statment appears under input field, informing about email  not assigned to any user account.
+	+ :heavy_check_mark: Paragraph with information provided.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+</details>
+
+<details>
+<summary>
+Register/Sign Up page
+</summary>
+	
++ Tests:
+	+ :heavy_check_mark: Page header
+	+ :heavy_check_mark: Paragraph with information and Sign In link, which links user to Login page.
+	+ :heavy_check_mark: Sign Up form contains:
+		+ Email address input field, Email address confirmation input field
+		+ Usename input field
+		+ Password input field
+		+ Password confirmation input field
+		+ **Back to Login** button, links user to Login page
+		+ **Sign Up** button submits form and links user to Verification sent page.
+	+ :heavy_check_mark: If any form's input field is empty and user tries to submit it, form provides message informing that fields need to filled.
+	+ :heavy_check_mark: If email and email confirmation fields have diferent input, message provided informing about emails need to be the same.
+	+ :heavy_check_mark: If password and password confirmation fields have diferent input, message provided informing about passwords need to be the same.
+	+ :heavy_check_mark: If password is to short, message provided informing about password being too short and it must contains at least 8 characters.
+	+ :heavy_check_mark: I fuser tries to submit form with email address which is already registered, form provides message informing about email address already being registered.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+</details>
+
 </details>
 
 # Technologies
