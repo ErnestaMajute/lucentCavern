@@ -716,6 +716,57 @@ Profile (loged in users only) page
 	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices as well.
 </details>
 
+<details>
+<summary>
+My Favorites (loged in users only) page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Page header displayed
+	+ Aligned cards with details
+	+ :heavy_check_mark: Card element:
+		+ Containes image which links to assigned product details page. Image responsive to styling.
+		+ Product name links to assigned product details page. Aligned to left side.
+		+ Correct price provided.
+		+ Category link with hastag icon provided, link takes user to assigned Product/category page.
+		+ Edit/Delete icon buttons (admin only). Edit button takes to product/edit page. Delete button deletes product and triggers toast with success message informing that product was successfuly deleted. Buttons aligned to the right side of card.
+	+ :heavy_check_mark: If user's favorites list is empty, paragraph provided, stating that user's favorites list is empty. **CONTINUE BROWSING** button provided to link user to Products page.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+</details>
+	
+<details>
+<summary>
+Blog page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Page header displayed
+	+ :heavy_check_mark: Contains card element for each blog post
+	+ :heavy_check_mark: Card element contains:
+		+ Correct post's header
+		+ Correct  author, date and time
+		+ Correct content (limited content length)
+		+ **READ MORE**  button links user to Blog Post details page
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+	
+</details>
+	
+<details>
+<summary>
+Blog post details page
+</summary>
+	
++ Tests:
+	+ :heavy_check_mark: Correct post title as header
+	+ :heavy_check_mark: Correct post subtitle 
+	+ :heavy_check_mark: Correct post Author
+	+ :heavy_check_mark: Correct publishing date
+	+ :heavy_check_mark: Correct post content
+	+ :heavy_check_mark: All elements above centered horizontaly to sit in a center
+	+ :heavy_check_mark: Aligned to the left **BACK** button, which links user back to Blog page.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+</details>
+
 </details>
 
 # Technologies
