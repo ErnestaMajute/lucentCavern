@@ -562,6 +562,63 @@ Products page
 	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
 </details>
 
+<details>
+<summary>
+Product detail page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Product image on the left responsive to sizing. When clicked links to a new tab with image from source.
+	+ :heavy_check_mark: On the right product name, price, description
+	+ :heavy_check_mark: Favorites heart icon button (loged in users):
+		+ When clicked, if user new, Favorites list created and products added to user's Favorites list. If user already has Favorites list, product added to it. Both scenarios triggers toast success message informing about product added to Favorites list.
+		+ When clicked if product already in user's Favorites list, product being removed from list and triggers toast with success message informing that product removed from Favorites list.
+	+ :heavy_check_mark: Edit/Delete icon buttons (admin only). Edit button takes to product/edit page. Delete button deletes product and triggers toast with success message informing that product was successfuly deleted. Buttons aligned to the right side of card.
+	+ :heavy_check_mark: Quantity input form allows user to set product quantity by direct input on by using up/down arrow button.
+	+ :heavy_check_mark: If user directly fills in number bigger than 20 and tries to add it product to the bag, form provides message with maximal value limit.
+	+ :heavy_check_mark: If user directly fills in number less or equal to 0  and tries to add it product to the bag, form provides message with minimal value limit.
+	+ :heavy_check_mark: Quantity form's Up/down arrow buttons being dissabled with JavaScript when quantity value get (minimum) 1, or (maximum) 20.
+	+ :heavy_check_mark: **CONTINUE SHOPPING** button links user to Product page.
+	+ :heavy_check_mark: **ADD TO BAG** button triggers success toast which contains:
+		+ Statement informing that product (name) added to the bag.
+		+ Provides paragraph with My Bag(product count).
+		+ Row with column containing image, another column containg product name and quantity.
+		+ If there is more different products in a shopping bag, vertical  scroll bar appears.
+		+ Another row provides paragraph with counted bag total ammount
+		+ If user's shopping bag total is less than 30euro, delivery cost percentage added from shopping bag total. Below Total, statment displayed, informing how much user needs to spent to get free delivery.
+		+ **SECURE CHECKOUT** button links user to Checkout page.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+</details>
+
+<details>
+<summary>
+Shopping Bag page
+</summary>
+	
++ Tests:
+	+ :heavy_check_mark: Contains header
+	+ :heavy_check_mark: Table with content:
+		+ Product info: Responsive sizing image with X icon button on the left side top corner. When hovered on button, changes colour. When clicked product being removed from shopping bag with JavaScript's help. Removing triggers toast with success message informing that product was deleted from shopping bag.
+		Product info also provides product name and sku unique number.
+		+ Price: shows product's price (for each). 
+		+ Quantity form:
+			+ Quantity input form allows user to set product quantity by direct input on by using up/down arrow button.
+			+ If user directly fills in number bigger than 20 and tries to update bag with **Update** link, form provides message with maximal value limit.
+			+ If user directly fills in number less or equal to 0  and tries to update bag with **Update** link, form provides message with minimal value limit.
+			+ Quantity form's Up/down arrow buttons being dissabled with JavaScript when quantity value get (minimum) 1, or (maximum) 20.
+			+ If user provides right ammount and cliks **Update** button, triggers toast with success message informing about product quantity being updated.
+		+ Subtotal:
+			+ Right subtotal ammount provided (quantity multiplied by price)
+	
+	+ :heavy_check_mark: Bag Total displays right ammount.
+	+ :heavy_check_mark: Delivery costs countent if shopping bag total less than 30 euro.
+	+ :heavy_check_mark: Right ammount of grand total displayed.
+	+ :heavy_check_mark: If user's shopping bag total less that 30 euro, paragraph displayed with information about how much user need to spent to get free delivery.
+	+ :heavy_check_mark: **CONTINUE SHOPPING** button links to All products page
+	+ :heavy_check_mark: **SECURE CHECKOUT** button links to Checkout Page
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices as well.
+</details>
+
 </details>
 
 # Technologies
