@@ -400,6 +400,7 @@ subscription_date | DateTimeField() | auto_now_add=True
 </details>
 
 # Testing
+Manual testing was done constantly during website's development. Final, repeated tests were done in the end of website's development. Family members were able to test my website on diferent devices, and feedbacks were related to issues with design (like colour pick) or typo (fixed).
 
 ## Validation
 
