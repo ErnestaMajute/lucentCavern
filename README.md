@@ -767,6 +767,39 @@ Blog post details page
 	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
 </details>
 
+<details>
+<summary>
+Log Out/Sign Out (loged in users only) page 
+</summary>
+	
++ Tests:
+	+ :heavy_check_mark: Page header displayed
+	+ :heavy_check_mark: Paragraph with question about signing out.
+	+ :heavy_check_mark: **Cancel** button links user to Home page.
+	+ :heavy_check_mark: **Sign Out** button logs out user, links to home page anf triggers toast with success message informing that user signed out.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+</details>
+
+<details>
+<summary>
+Login/Sign In page 
+</summary>
+	
++ Tests:
+	+ :heavy_check_mark: Page header displayed
+	+ :heavy_check_mark: Paragraph displayed with content and Sign Up link, which links to Register/Sign Up page.
+	+ :heavy_check_mark: Contains Login form:
+		+ Login input field provided for username
+		+ Password input field provided for password
+		+ "Remember Me" checkbox input
+		+ **Home** button links user to Home page
+		+ **Sign In** button submits form and logs in user, links to home page, triggers toast with success message informing about successful  login.
+		+ Forgot Password? link links to Password Reset page
+	+ :heavy_check_mark: If user tried to submit form with empty input fields on any one empty field, form provides message informing that fields need to filled.
+	+ :heavy_check_mark: If user's username or password incorrect, or user not registered, after try to submit form, alert block with message provided, informing that specified username or password  are incorrect.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+</details>
+
 </details>
 
 # Technologies
