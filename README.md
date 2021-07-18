@@ -1,4 +1,4 @@
-# [Lucent Cavern](lucent-cavern.herokuapp.com)
+# [Lucent Cavern](https://lucent-cavern.herokuapp.com/)
 
 
 ![Responsive Image](README-media/responsive-image.png)
@@ -492,6 +492,76 @@ Footer
 	+ :heavy_check_mark: Mobile/tablet view: Each footer card takes full column (12), and individual row.
 	+ :heavy_check_mark: Address card content aligned to center, Map Icon provided (only on mobile/tablet view).
 </details>
+
+<details>
+<summary>
+Home page
+</summary>
+		
++ Tests:
+	+ :heavy_check_mark: Intro container provides headers with small website description and statment about free delivery. Provides **SHOP NOW** button which links to Products page. Content aligned to center verticaly and horizontaly.
+	+ :heavy_check_mark: About container contains header and content bellow. Centered verticaly and horizontaly.
+	+ :heavy_check_mark: Products index container displays header, three product categories cards, and a button. Aligned and styled.
+	+ :heavy_check_mark: Raw Crystals, Jewellery, Salt Lamps cards: 
+		+ Images cards centered, takes three colums, has overlay.
+		+ Category link names on images links to assigned Products category pages.
+	+ :heavy_check_mark: Button **VIEW ALL CATEGORIES** links to All Products page.
+	+ :heavy_check_mark: All link tests above done for mobile/tablet view.
+	+ :heavy_check_mark: Mobile/tablet view: Each card takes 12 template colums per row.
+	+ :heavy_check_mark: Subscribe section contains header, announcement, form for email input and a button, content aligned horizontaly and verticaly.
+	+ :heavy_check_mark: Email input form:
+		+ Email form submited without input, specifies that an input field must be filled out before submitting the form.
+		+ Email form submited with random characters, specifies email address format and prevents form from being submited.
+		+ Email form submited with correct email, triggers toast with success message about email address being added to subscription list.
+		+ Email form submited with email address which already in a subscription list, triggers toast with error message about email address already subscribing a newsletter.
+	+ :heavy_check_mark: **SUBMIT** button successfuly submits form if there is no exceptions mentioned above.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done for submit container.
+	
+</details>
+
+<details>
+<summary>
+Products/category page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Contains aligned components:
+		+ Two headers
+		+ Link to all Products page, product count and sort selector
+		+ Aligned cards with details
+	+ :heavy_check_mark: Products Home link, links to All Product page.
+	+ :heavy_check_mark: Product count provides right ammount of products
+	+ :heavy_check_mark: Sort Selector sorts (ascending & descending) by price, name and category. All sorting methods tested and provides correct results.
+	+ :heavy_check_mark: Card element:
+		+ Containes image which links to assigned product details page. Image responsive to styling.
+		+ Product name links to assigned product details page. Aligned to left side.
+		+ Correct price provided.
+		+ Category link with hastag icon provided, link takes user to assigned Product/category page.
+		+ Edit/Delete icon buttons (admin only). Edit button takes to product/edit page. Delete button deletes product and triggers toast with success message informing that product was successfuly deleted. Buttons aligned to the right side of card.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+</details>
+	
+<details>
+<summary>
+Products page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Contains aligned components:
+		+ Header
+		+ product count and sort selector
+		+ Aligned cards with details
+	+ :heavy_check_mark: Product count provides right ammount of products
+	+ :heavy_check_mark: Sort Selector sorts (ascending & descending) by price, name and category. All sorting methods tested and provides correct results.
+	+ :heavy_check_mark: Card element:
+		+ Containes image which links to assigned product details page. Image responsive to styling.
+		+ Product name links to assigned product details page. Aligned to left side.
+		+ Correct price provided.
+		+ Category link with hastag icon provided, link takes user to assigned Product/category page.
+		+ Edit/Delete icon buttons (admin only). Edit button takes to product/edit page. Delete button deletes product and triggers toast with success message informing that product was successfuly deleted. Buttons aligned to the right side of card.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices.
+</details>
+
 </details>
 
 # Technologies
@@ -597,7 +667,7 @@ USE_AWS | True
 ### Media
 
 - Images and background used for this project were found on:
-	-  [Pexels](https://www.pexels.com)
+	- [Pexels](https://www.pexels.com)
 	- [PxHere](https://pxhere.com/)
 	- [Unsplash](https://unsplash.com/)
 	- [Pixabay](https://pixabay.com/)
