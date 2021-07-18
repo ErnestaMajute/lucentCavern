@@ -672,6 +672,50 @@ Checkout Success page
 	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices as well.
 </details>
 
+<details>
+<summary>
+Product Management Add Product (admin only) page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Two headers displayed
+	+ :heavy_check_mark: Form contains: select dropdown for categories, input fields for sku, name, description, price, image url, input for image
+	+ :heavy_check_mark: If user tries to add product without filling input fields, form provides message informing that fields need to filled.
+	+ :heavy_check_mark: After filling in required fields for product adding and clicking **Add Product**, new product added and user linked to product details page with newly added product details. Triggered toast with success message informing that product successfully added.
+	+ :heavy_check_mark: **Cancel** button prings to Products page
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices as well.
+</details>
+
+<details>
+<summary>
+Product Management Edit Product (admin only) page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Two headers displayed
+	+ :heavy_check_mark: Alert message toast displayed, informing that user edditing product
+	+ :heavy_check_mark: Form contains prefilled inputs: select dropdown for categories, input fields for sku, name, description, price, image url, input for image
+	+ :heavy_check_mark: If user tries to submit form without filling required input fields, form provides message informing that fields need to filled.
+	+ :heavy_check_mark: After modifing form's input fields for product editing and clicking **Update Product**, product updated and user linked to product details page with newly added product details. Triggered toast with success message informing that product successfully updated.
+	+ :heavy_check_mark: **Cancel** button prings to Products page
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices as well.
+</details>
+	
+<details>
+<summary>
+Profile (loged in users only) page
+</summary>
+
++ Tests:
+	+ :heavy_check_mark: Page header
+	+ :heavy_check_mark: Personal Order History table provided: contains order number, Date, Items, Order Total.
+	+ :heavy_check_mark: Table provides correct order details (if user ever placed order): date, items and their quantity, correctly countet order total.
+	+ :heavy_check_mark: When clicked on order id number, user linked to Checkout success page, with order details. In Checkout Success page, toast for alert message displayed, informing that it's a past confirmation for order number XXXXXX. And that confirmation email was sent on the order date.
+	+ :heavy_check_mark: Personal Default Delivery Information form provides correct input fields. If user placed the order before, and chose save the details, Pesonal Default Delivery Information form prefilled alredy with current user's info.
+	+ :heavy_check_mark: form's input fields modified on click **UPDATE INFORMATION** information saved, triggered toast with success message informing that Profile updated successfully.
+	+ :heavy_check_mark: Mobile/tablet view: All tests above done. Set Layout grid responsive to small devices as well.
+</details>
+
 </details>
 
 # Technologies
