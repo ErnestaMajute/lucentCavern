@@ -1,7 +1,7 @@
 # [Lucent Cavern](https://lucent-cavern.herokuapp.com/)
 
 
-![Responsive Image](README-media/responsive-image.png)
+![Responsive Image](README/media/responsive-image.png)
 
 This website is my final Milestone project in Code Institute. Project contains the use of  HTML, CSS, JavaScript, Django, Python, and a relational database. Website hosted on Heroku. Static and media files stored on an S3 Cloud storage from AWS. Project is connected to Stripe's payment processing platform.
 
@@ -77,7 +77,7 @@ I wanted to create a website that would create a feeling that you are in a lucen
 
 Colours taken from home image, to match whole website.
 
-![Colours](README-media/sites-colours.png)
+![Colours](README/media/sites-colours.png)
 
 ### Typography
 
@@ -86,7 +86,24 @@ Main font family is  [Playfair Display](https://fonts.google.com/specimen/Playfa
 ## Wireframes
 Wireframes were created by hand. They look simple and not very detailed, a bit different from final look because they were created before I started my project. Personally for me it's easier to put everything into places when project is in progress already, details like buttons forms and other elements.
 
-#wireframes links#
+<details>
+	<summary>
+		:open_book:
+	</summary>
+	
++ [Add/edit product pages](README/media/wireframes/add-edit-product-page.jpg)
++ [Blog/blog post pages](README/media/wireframes/blog-blogpost-pages.jpg)
++ [Checkout page](README/media/wireframes/checkout-page.jpg)
++ [Checkout success page](README/media/wireframes/checkoutsuccess-page.jpg)
++ [Favorites page](README/media/wireframes/favorites-page.jpg)
++ [Home page](README/media/wireframes/home-page.jpg)
++ [Navbar/Footer](README/media/wireframes/navbar-footer.jpg)
++ [Product detail page](README/media/wireframes/productdetail-page.jpg)
++ [Products page](README/media/wireframes/products-page.jpg)
++ [Profile pages](README/media/wireframes/profile-page.jpg)
++ [Shopping bag page](README/media/wireframes/shoppingbag-page.jpg)
+
+</details>
 
 # Features
 
@@ -300,7 +317,7 @@ Wireframes were created by hand. They look simple and not very detailed, a bit d
 - For Development I used SQlite3 database which provided by Django. After deployment to Heroku database was switched to PostgreSQL.
 
 ## Database Schema
-![Database Schema](README-media/db-schema.png)
+![Database Schema](README/media/db-schema.png)
 
 ## Structure
 
