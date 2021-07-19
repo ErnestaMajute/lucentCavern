@@ -968,6 +968,11 @@ Project developed by following Boutique Ado(Code Institute) mini project lessons
 - [Style guide for Python Code](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
 - [README dropdown header styling](https://stackoverflow.com/questions/47392245/show-dropdown-area-expandable-area-with-code-in-markdown-file)
 - [README dropdown](https://gist.github.com/citrusui/07978f14b11adada364ff901e27c7f61#file-dropdown-md)
+- [Free Articles & Web Content](https://www.amazines.com/Archive/index.cfm)
+- [Article for Blog #1](https://www.amazines.com/article_detail.cfm/6075180?articleid=6075180)
+- [Article for Blog #2](https://www.amazines.com/article_detail.cfm/5920412?articleid=5920412)
+- [Article for Blog #3](https://www.amazines.com/article_detail.cfm/6252474?articleid=6252474)
+- [Article for Blog #4](https://www.amazines.com/article_detail.cfm/6243278?articleid=6243278)
 
 ### Acknowledgements
 I want to say huge thanks to my mentor Reuben Ferrante, who guided me through all Code Institute Course. Thankful for his patience, professionalism and good words which motivated me in past months.
