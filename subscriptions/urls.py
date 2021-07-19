@@ -4,6 +4,7 @@ from subscriptions import views
 
 
 urlpatterns = [
-    path('subscriptions_join/', views.subscriptions_join,
+    path('subscriptions_join/',
+         views.subscriptions_join,
          name='subscriptions_join'),
 ]
