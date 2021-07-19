@@ -402,6 +402,14 @@ subscription_date | DateTimeField() | auto_now_add=True
 # Testing
 Manual testing was done constantly during website's development. Final, repeated tests were done in the end of website's development. Family members were able to test my website on diferent devices, and feedbacks were related to issues with design (like colour pick) or typo (fixed).
 
+For Checkout testing process use test credit card numbers provided by [Stripe documentation](https://stripe.com/docs/payments/accept-a-payment).
+
+Number | Description 
+------------- | -------------
+4242424242424242 | Succeeds and immediately processes the payment.
+4000000000003220 | 3D Secure 2 authentication must be completed for a successful payment.
+4000000000009995 | Always fails with a decline code of insufficient_funds.
+
 ## Validation
 
 <details>
